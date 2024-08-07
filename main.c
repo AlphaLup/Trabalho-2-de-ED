@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-// #include <locale.h>
+#include <locale.h>
 #include "Exam.h"
 #include "Patient.h"
 #include "PatientQueue.h"
 
 int main(){
     // Definindo a padronização de string para o idioma português
-    // setlocale(LC_ALL, "PORTUGUESE_BRAZIL.UTF-8");
+    setlocale(LC_ALL, ".UTF-8");
 
     // Definindo uma data de nascimento fictícia para o paciente
     struct tm birthdate = {0}; // Inicializar a estrutura com zeros
@@ -23,7 +23,7 @@ int main(){
     printf("Paciente criado:\n");
     printf("ID: %d\n", get_patient_id(patient));
     printf("Nome: %s\n", get_patient_name(patient));
-    printf("Data de Nascimento: %s\n", asctime(get_patient_birthdate(patient)));
+    printf("Data de Nascimento: %s\n", asctime(get_patient_register_date(patient)));
 
     // Definindo uma data e hora fictícias para o exame
     time_t current_time;

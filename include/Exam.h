@@ -8,7 +8,7 @@ typedef struct exam Exam;
 
 // criar um novo exame
 // tipo de retorno: Exam * --> um ponteiro para a estrutura do exame
-Exam *create_exam(int id, int patient_id, int rx_id, struct tm *time);
+Exam *create_exam(int id, int patient_id, int rx_id);
 
 // destruir um exame
 // liberar a memória alocada para a estrutura do exame

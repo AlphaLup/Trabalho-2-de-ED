@@ -9,12 +9,14 @@ struct patient
 {
     int id;
     char * name;
-    struct tm * register_date;
+    struct tm * register_time;
 };
 
-// cria um novo paciente
-Patient *create_patient(int id, const char *name, struct tm *register_date) {
+// cria um novo paciente e salva os dados no arquivo db_patient.txt
+Patient *create_patient(int id, const char *name) {
     Patient *new_patient;
+    time_t current_time = time(NULL);
+    struct tm *register_time = localtime(&current_time);
 
     // aloca memória para o novo paciente
     new_patient = (Patient *)malloc(sizeof(Patient));
@@ -27,7 +29,22 @@ Patient *create_patient(int id, const char *name, struct tm *register_date) {
     // define os valores do novo paciente
     new_patient->id = id;
     new_patient->name = strdup(name);
-    new_patient->register_date = register_date;
+    new_patient->register_time = register_time;
+
+    // abre o arquivo para escrita
+    FILE *file = fopen("db_patient.txt", "w");
+    if (file == NULL) {
+        perror("Falha ao abrir o arquivo");
+        exit(1);
+    }
+
+    // escreve os dados do paciente no arquivo
+    fprintf(file, "%d\n", new_patient->id);
+    fprintf(file, "%s\n", new_patient->name);
+    fprintf(file, "%s\n", asctime(new_patient->register_time));
+
+    // fecha o arquivo
+    fclose(file);
 
     return new_patient;
 }
@@ -36,7 +53,7 @@ Patient *create_patient(int id, const char *name, struct tm *register_date) {
 void destroy_patient(Patient *patient) {
     // libera a memória alocada para a estrutura do paciente
     if (patient!=NULL) {
-        // free(patient->name);
+        free(patient->name);
         // free(patient->register_date);
         free(patient);
     }
@@ -57,5 +74,5 @@ char * get_patient_name(const Patient *patient) {
 // obtém a data de nascimento de um paciente
 struct tm * get_patient_register_date(const Patient *patient) {
     // retorna um ponteiro referenciando a estrutura tm de <time.h>
-    return patient->register_date;
+    return patient->register_time;
 }
