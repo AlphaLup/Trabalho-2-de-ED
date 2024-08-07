@@ -34,44 +34,33 @@ Exam * create_exam (int id, int patient_id, int rx_id) {
     exam->register_time = register_time;
 
     int ran_number = rand() % 100;
-    switch (ran_number)
-    {
-    case 0 ... 29:
-        exam->condition_IA = 'Saúde Normal';
+    if (ran_number >= 0 && ran_number <= 29) {
+        exam->condition_IA = "Saúde Normal";
         exam->priority = 1;
-        break;
-    case 30 ... 49:
-        exam->condition_IA = 'Bronquite';
+    } else if (ran_number >= 30 && ran_number <= 49) {
+        exam->condition_IA = "Bronquite";
         exam->priority = 2;
-        break;
-    case 50 ... 59:
-        exam->condition_IA = 'Pneumonia';
+    } else if (ran_number >= 50 && ran_number <= 59) {
+        exam->condition_IA = "Pneumonia";
         exam->priority = 3;
-        break;
-    case 60 ... 69:
-        exam->condition_IA = 'COVID';
+    } else if (ran_number >= 60 && ran_number <= 69) {
+        exam->condition_IA = "COVID";
         exam->priority = 4;
-        break;
-    case 70 ... 74:
-        exam->condition_IA = 'Embolia pulmonar';
+    } else if (ran_number >= 70 && ran_number <= 74) {
+        exam->condition_IA = "Embolia pulmonar";
         exam->priority = 4;
-        break;
-    case 75 ... 79:
-        exam->condition_IA = 'Derrame pleural';
+    } else if (ran_number >= 75 && ran_number <= 79) {
+        exam->condition_IA = "Derrame pleural";
         exam->priority = 4;
-        break;
-    case 80 ... 84:
-        exam->condition_IA = 'Fibrose pulmonar';
+    } else if (ran_number >= 80 && ran_number <= 84) {
+        exam->condition_IA = "Fibrose pulmonar";
         exam->priority = 5;
-        break;
-    case 85 ... 89:
-        exam->condition_IA = 'Turbeculose';
+    } else if (ran_number >= 85 && ran_number <= 89) {
+        exam->condition_IA = "Turbeculose";
         exam->priority = 5;
-        break;
-    case 90 ... 99:
-        exam->condition_IA = 'Câncer de pulmão';
+    } else if (ran_number >= 90 && ran_number <= 99) {
+        exam->condition_IA = "Câncer de pulmão";
         exam->priority = 6;
-        break;
     }
 
     FILE *file = fopen("db_exam.txt", "w");
@@ -126,4 +115,16 @@ int get_exam_rx_id(Exam *exam) {
 struct tm * get_exam_time(Exam *exam) {
     // retorna o horário do exame
     return exam->register_time;
+}
+
+// obtém a condição do exame
+char get_exam_condition(Exam *exam) {
+    // retorna a condição do exame
+    return exam->condition_IA;
+}
+
+// obtém a prioridade do exame
+int get_exam_priority(Exam *exam) {
+    // retorna a prioridade do exame
+    return exam->priority;
 }

@@ -6,16 +6,20 @@
 #include "./include/Patient.h"
 #include "./include/PatientQueue.h"
 #include "./include/XRMachineManager.h"
+#include "./include/ExamPriorityQueue.h"
 
 int main(){
     // Gerando uma lista com 20 nomes diferentes
     char* names[20] = {"João","Maria","Pedro","Ana","Carlos","Mariana","Lucas","Julia","Fernando","Camila","Gustavo","Isabela","Rafael","Larissa","Rodrigo","Amanda","Diego","Natália","Marcelo","Letícia"};
 
-    // Gerando o contador para o ID do paciente
-    int count = 0;
-    XRMachine *mach;
-    Patient *pat;
+    // Gerando o contador para o ID
+    int pat_id = 1;
+    int exam_id = 1;
 
+    // Criando as variáveis de controle
+    XRMachine *mach;
+    Patient *patient;
+    
     // Seed para a função rand()
     srand(time(NULL));
 
@@ -24,15 +28,18 @@ int main(){
 
     // Criando o gerenciador de máquinas de raio-x
     XRMachineManager *xr = xr_create();
+    
+    // Criando a fila de exames com prioridade
+    ExamPriorityQueue *epq = epq_create();
 
     // Loop de passagem de tempo
     for(int i = 0; i < 43200; i++) {
         int name_index = rand() % 20;
 
         if(rand() % 10 <= 1){
-            Patient *patient = create_patient(count, names[name_index]);
+            Patient *patient = create_patient(pat_id, names[name_index]);
             pq_insert(pq, patient);
-            count ++;
+            pat_id ++;
         };
 
         mach = xr_available(xr);
@@ -40,9 +47,12 @@ int main(){
             xr_add_patient(mach, pq_remove(pq), i + 10);
         };
 
-        pat = xr_finished(xr, i);
-        if(pat != NULL) {
-            // TODO: Implementar a função de exame
+        // Verifica se alguma máquina já terminou
+        mach = xr_finished(xr, i);
+        patient = get_patient(mach);
+        // Direciona o paciente para o exame com laudo de IA
+        if(mach != NULL) {
+            epq_insert(epq, create_exam(exam_id, get_patient_id(patient), get_rx_id(mach)));
         };
     }
 
