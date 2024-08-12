@@ -76,14 +76,14 @@ void xr_add_patient(XRMachine *machine, Patient *patient, int time) {
     machine->finish_time = time;
 }
 
-XRMachine * xr_finished(XRMachineManager *xr, int time) {
+Patient * xr_finished(XRMachineManager *xr, int time) {
     XRMachine *machine = xr->front;
     while(machine != NULL) {
         if(machine->finish_time != 0 && machine->finish_time == time) {
             machine->finish_time = 0;
             Patient *ret_pat = machine->patient;
             machine->patient = NULL;
-            return machine;
+            return ret_pat;
         }
         machine = machine->next;
     }
