@@ -12,20 +12,6 @@ struct xrMachine {
     int finish_time;
 };
 
-XRMachine *xr_create_machine() {
-    XRMachine *machine = (XRMachine *)malloc(sizeof(XRMachine));
-    if (machine == NULL) {
-        perror("Falha ao alocar memória para a máquina de raio-x");
-        exit(1);
-    }
-
-    machine->patient = NULL;
-    machine->next = NULL;
-    machine->finish_time = 0;
-
-    return machine;
-};
-
 int pq_is_empty(XRMachineManager *xr) {
     return xr->front == NULL;
 };
@@ -87,4 +73,18 @@ XRMachine * xr_finished(XRMachineManager *xr, int time) {
     return NULL;
 }
 
-// CRIAR FUNÇÃO PARA LIBERAR MEMÓRIA DAS MÁQUINAS DE RAIO-X
+void clear_machine(XRMachine *machine) {
+    machine->patient = NULL;
+    machine->finish_time = 0;
+}
+
+void free_xr(XRMachineManager *xr) {
+    XRMachine *machine = xr->front;
+    XRMachine *next;
+    while(machine != NULL) {
+        next = machine->next;
+        free(machine);
+        machine = next;
+    }
+    free(xr);
+}

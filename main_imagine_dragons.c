@@ -63,9 +63,14 @@ int main(){
         // Direciona o paciente para o exame com laudo de IA
         if(mach != NULL) {
             epq_insert(epq, create_exam(exam_id, get_patient_id(patient), get_rx_id(mach)));
-            // clear_machine(mach) -> Função para remover o paciente e zerar o tempo (precisa fazer)
-        };
+            clear_machine(mach);
+        }
     }
+
+    // Libera a memória alocada
+    epq_destroy(epq);
+    xr_destroy(xr);
+    pq_destroy(pq);
 
     return 0;
 }
