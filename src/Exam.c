@@ -13,26 +13,7 @@ struct exam {
     int priority;
 };
 
-// cria um novo exame
-Exam * create_exam (int id, int patient_id, int rx_id) {
-    time_t current_time = time(NULL);
-    struct tm *register_time = localtime(&current_time);
-
-    // aloca memória para o novo exame
-    Exam *exam;
-
-    exam = (Exam *) malloc (sizeof(Exam));
-    if(exam == NULL) {
-        perror("Falha ao alocar memória para o exame");
-        exit(1);
-    }
-
-    // define os valores do novo exame
-    exam->id = id;
-    exam->patient_id = patient_id;
-    exam->rx_id = rx_id;
-    exam->register_time = register_time;
-
+void ai_report(Exam *exam) {
     int ran_number = rand() % 100;
     if (ran_number >= 0 && ran_number <= 29) {
         exam->condition_IA = "Saúde Normal";
@@ -62,7 +43,9 @@ Exam * create_exam (int id, int patient_id, int rx_id) {
         exam->condition_IA = "Câncer de pulmão";
         exam->priority = 6;
     }
+}
 
+void save_exam(Exam *exam) {
     FILE *file = fopen("db_exam.txt", "w");
     if (file == NULL) {
         perror("Falha ao abrir o arquivo");
@@ -79,6 +62,31 @@ Exam * create_exam (int id, int patient_id, int rx_id) {
 
     // fecha o arquivo
     fclose(file);
+}
+
+// cria um novo exame
+Exam * create_exam (int id, int patient_id, int rx_id) {
+    time_t current_time = time(NULL);
+    struct tm *register_time = localtime(&current_time);
+
+    // aloca memória para o novo exame
+    Exam *exam;
+
+    exam = (Exam *) malloc (sizeof(Exam));
+    if(exam == NULL) {
+        perror("Falha ao alocar memória para o exame");
+        exit(1);
+    }
+
+    // define os valores do novo exame
+    exam->id = id;
+    exam->patient_id = patient_id;
+    exam->rx_id = rx_id;
+    exam->register_time = register_time;
+    // Faz o pré-diagnóstico com "IA"
+    ai_report(exam);
+    // Salva o exame em um arquivo
+    save_exam(exam);
 
     // retorna o novo exame
     return exam;
