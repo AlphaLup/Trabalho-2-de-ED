@@ -11,6 +11,6 @@ XRMachineManager *xr_create();
 
 XRMachine * xr_available(XRMachineManager *xr);
 
-XRMachine * xr_finished(XRMachineManager *xr, int time);
+Patient * xr_finished(XRMachineManager *xr, int time);
 
 #endif
