@@ -34,20 +34,30 @@ int main(){
 
     // Loop de passagem de tempo
     for(int i = 0; i < 43200; i++) {
+        // Escolhe um dos nomes da lista aleatóriamente
         int name_index = rand() % 20;
 
-        if(rand() % 10 <= 1){
+        /*    Fila de Pacientes    */
+        if(rand() % 10 <= 1){ // 20%
+            // Cria um paciente
             Patient *patient = create_patient(pat_id, names[name_index]);
+            // Insere paciente na fila
             pq_insert(pq, patient);
+            // Controle do ID do paciente
             pat_id ++;
         };
 
+        /*    Maquinas de Raio X    */
+
+        // Verifica se há alguma máquina disponível
         mach = xr_available(xr);
         if(mach != NULL) {
+            // Adiciona um paciente à essa máquina
             xr_add_patient(mach, pq_remove(pq), i + 10);
         };
 
         // Verifica se alguma máquina já terminou
+        // Caso positivo, ele retornará um ponteiro para uma máquina na variável 'mach'
         mach = xr_finished(xr, i);
         patient = get_patient(mach);
         // Direciona o paciente para o exame com laudo de IA
