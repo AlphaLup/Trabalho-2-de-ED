@@ -57,12 +57,13 @@ int main(){
         };
 
         // Verifica se alguma máquina já terminou
-        // Caso positivo, ele retornará um ponteiro para uma máquina na variável 'mach'
+        // Caso positivo, ele retornará um ponteiro para uma máquina na variável 'machine'
         mach = xr_finished(xr, i);
         patient = get_patient(mach);
         // Direciona o paciente para o exame com laudo de IA
         if(mach != NULL) {
             epq_insert(epq, create_exam(exam_id, get_patient_id(patient), get_rx_id(mach)));
+            // clear_machine(mach) -> Função para remover o paciente e zerar o tempo (precisa fazer)
         };
     }
 
