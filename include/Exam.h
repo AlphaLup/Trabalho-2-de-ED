@@ -31,4 +31,8 @@ int get_exam_rx_id(Exam *exam);
 // tipo de retorno: struct tm *
 struct tm *get_exam_time(Exam *exam);
 
+// obter a prioridade do exame
+// tipo de retorno: int
+int get_exam_priority(Exam *exam);
+
 #endif

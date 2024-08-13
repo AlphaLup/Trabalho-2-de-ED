@@ -13,6 +13,10 @@ PatientQueue *pq_create();
 // tipo de retorno: int
 int pq_is_empty(PatientQueue *pq);
 
+// retorna o tamanho da fila de pacientes
+// tipo de retorno: int
+int pq_size(PatientQueue *pq);
+
 // insere um paciente ao final da fila de pacientes
 void pq_insert(PatientQueue *pq, Patient *patient);
 

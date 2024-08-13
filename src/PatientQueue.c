@@ -6,6 +6,7 @@ struct patientQueue
 {
     PatientNode *front; // ponteiro para o primeiro nó da fila
     PatientNode *rear; // ponteiro para o último nó da fila
+    int size; // tamanho da fila
 };
 
 struct patientNode
@@ -25,6 +26,7 @@ PatientQueue *pq_create() {
 
     pq->front = NULL;
     pq->rear = NULL;
+    pq->size = 0;
     return pq;
 };
 
@@ -32,6 +34,10 @@ PatientQueue *pq_create() {
 int pq_is_empty(PatientQueue *pq) {
     return pq->front == NULL;
 };
+
+int pq_size(PatientQueue *pq) {
+    return pq->size;
+}
 
 // Insere um paciente ao final da fila de pacientes
 void pq_insert(PatientQueue *pq, Patient *patient) {
@@ -47,6 +53,7 @@ void pq_insert(PatientQueue *pq, Patient *patient) {
     }
 
     pq->rear = node;
+    pq->size ++;
 }
 
 // Remove o primeiro paciente da fila de pacientes
@@ -63,6 +70,8 @@ Patient *pq_remove(PatientQueue *pq) {
     } else {
         pq->front = node->next;
     }
+
+    pq->size --;
 
     free(node);
 }

@@ -8,7 +8,7 @@ typedef struct patient Patient;
 
 // criar um novo paciente
 // tipo de retorno: Patient * p --> (ponteiro para a estrutura do paciente)
-Patient *create_patient(int id, const char *name);
+Patient *create_patient(int id, const char *name, struct tm *register_timestamp);
 
 // destruir um paciente
 // liberar a memória alocada para a estrutura do paciente

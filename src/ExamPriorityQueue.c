@@ -72,3 +72,17 @@ void epq_insert(ExamPriorityQueue *epq, Exam *exam) {
         }
     }
 }
+
+void epq_destroy(ExamPriorityQueue *epq) {
+    ExamPriorityNode *current = epq->front;
+    ExamPriorityNode *next;
+
+    while (current != NULL) {
+        next = current->next;
+        destroy_exam(current->data_exam);
+        free(current);
+        current = next;
+    }
+
+    free(epq);
+}
