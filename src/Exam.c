@@ -1,6 +1,7 @@
 #include <time.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 #include "Exam.h"
 
 // define a estrutura do exame
@@ -9,7 +10,7 @@ struct exam {
     int patient_id;
     int rx_id;
     struct tm *register_time;
-    char condition_IA;
+    char *condition_IA;
     int priority;
 };
 
@@ -54,11 +55,11 @@ void save_exam(Exam *exam) {
 
     // escreve os dados do paciente no arquivo
     fprintf(file, "%d\n", exam->id);
-    fprintf(file, "%s\n", exam->patient_id);
-    fprintf(file, "%s\n", exam->rx_id);
+    fprintf(file, "%d\n", exam->patient_id);
+    fprintf(file, "%d\n", exam->rx_id);
     fprintf(file, "%s\n", asctime(exam->register_time));
     fprintf(file, "%s\n", exam->condition_IA);
-    fprintf(file, "%s\n", exam->priority);
+    fprintf(file, "%d\n", exam->priority);
 
     // fecha o arquivo
     fclose(file);
@@ -126,7 +127,7 @@ struct tm * get_exam_time(Exam *exam) {
 }
 
 // obtém a condição do exame
-char get_exam_condition(Exam *exam) {
+char *get_exam_condition(Exam *exam) {
     // retorna a condição do exame
     return exam->condition_IA;
 }

@@ -32,8 +32,8 @@ Patient *create_patient(int id, const char *name) {
     new_patient->register_time = register_time;
 
     // abre o arquivo para escrita
-    FILE *file = fopen("db_patient.txt", "w");
-    if (file == NULL) {
+    FILE *file = fopen("db_patient.txt", "a");
+    if (!file) {
         perror("Falha ao abrir o arquivo");
         exit(1);
     }
@@ -41,7 +41,7 @@ Patient *create_patient(int id, const char *name) {
     // escreve os dados do paciente no arquivo
     fprintf(file, "%d\n", new_patient->id);
     fprintf(file, "%s\n", new_patient->name);
-    fprintf(file, "%s\n", asctime(new_patient->register_time));
+    fprintf(file, "%s", asctime(new_patient->register_time));
 
     // fecha o arquivo
     fclose(file);

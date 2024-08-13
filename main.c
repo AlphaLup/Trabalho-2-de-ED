@@ -2,50 +2,59 @@
 #include <stdlib.h>
 #include <time.h>
 #include <locale.h>
-#include "Exam.h"
-#include "Patient.h"
-#include "PatientQueue.h"
+#include "./include/Exam.h"
+#include "./include/Patient.h"
+#include "./include/PatientQueue.h"
+#include "./include/XRMachineManager.h"
+#include "./include/ExamPriorityQueue.h"
 
 int main(){
-    // Definindo a padronização de string para o idioma português
-    setlocale(LC_ALL, ".UTF-8");
+    // Gerando uma lista com 20 nomes diferentes
+    char* names[20] = {"João","Maria","Pedro","Ana","Carlos","Mariana","Lucas","Julia","Fernando","Camila","Gustavo","Isabela","Rafael","Larissa","Rodrigo","Amanda","Diego","Natália","Marcelo","Letícia"};
 
-    // Definindo uma data de nascimento fictícia para o paciente
-    struct tm birthdate = {0}; // Inicializar a estrutura com zeros
-    birthdate.tm_year = 90; // Ano 1990
-    birthdate.tm_mon = 5; // Junho (0-indexed)
-    birthdate.tm_mday = 15; // Dia 15
+    // Gerando o contador para o ID
+    int pat_id = 1;
+    // int exam_id = 1;
 
-    // Criando um paciente
-    Patient *patient = create_patient(1, "João Silva", &birthdate);
+    // Criando as variáveis de controle
+    XRMachine *mach;
+    // Patient *patient;
+    
+    // Seed para a função rand()
+    srand(time(NULL));
 
-    // Imprimindo informações do paciente criado
-    printf("Paciente criado:\n");
-    printf("ID: %d\n", get_patient_id(patient));
-    printf("Nome: %s\n", get_patient_name(patient));
-    printf("Data de Nascimento: %s\n", asctime(get_patient_register_date(patient)));
+    // Criando a fila de pacientes sem prioridade
+    PatientQueue *pq = pq_create();
 
-    // Definindo uma data e hora fictícias para o exame
-    time_t current_time;
-    struct tm *exam_time;
+    // Criando o gerenciador de máquinas de raio-x
+    XRMachineManager *xr = xr_create();
+    
+    // // Criando a fila de exames com prioridade
+    // ExamPriorityQueue *epq = epq_create();
 
-    // Tempo do exame é o tempo atual
-    current_time = time(NULL); // Obter o tempo atual em segundos desde 01/01/1970
-    exam_time = localtime(&current_time); // Converter o tempo atual para hora local
+    // Loop de passagem de tempo
+    for(int i = 0; i < 200; i++) {
+        int name_index = rand() % 20;
 
-    // Criando um exame associado ao paciente criado
-    Exam *exam = create_exam(101, get_patient_id(patient), 1, exam_time);
+        if(rand() % 10 <= 1){
+            Patient *patient = create_patient(pat_id, names[name_index]);
+            pq_insert(pq, patient);
+            pat_id ++;
+        };
 
-    // Imprimindo informações do exame criado
-    printf("\nExame criado:\n");
-    printf("ID: %d\n", get_exam_id(exam));
-    printf("ID do Paciente: %d\n", get_exam_patient_id(exam));
-    printf("ID do Aparelho de Raio-X: %d\n", get_exam_rx_id(exam));
-    printf("Data e Hora do Exame: %s\n", asctime(get_exam_time(exam)));
+        // mach = xr_available(xr);
+        // if(mach != NULL) {
+        //     xr_add_patient(mach, pq_remove(pq), i + 10);
+        // };
 
-    // Liberando a memória alocada
-    destroy_exam(exam);
-    destroy_patient(patient);
+    //     // Verifica se alguma máquina já terminou
+    //     mach = xr_finished(xr, i);
+    //     patient = xr_get_patient(mach);
+    //     // Direciona o paciente para o exame com laudo de IA
+    //     if(patient != NULL) {
+    //         epq_insert(epq, create_exam(exam_id, get_patient_id(patient), xr_get_rx_id(mach)));
+    //     };
+    }
 
     return 0;
 }
