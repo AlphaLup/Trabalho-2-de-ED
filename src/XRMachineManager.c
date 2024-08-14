@@ -22,13 +22,24 @@ int xr_is_empty(XRMachineManager *xr) {
 void xr_insert(XRMachineManager *xr, int id) {
     XRMachine *machine = (XRMachine *)malloc(sizeof(XRMachine));
 
+    if (machine == NULL) {
+        perror("Falha ao alocar memória para a máquina de raio-x");
+        exit(1);
+    }
+
+    machine->id = id;
+    machine->patient = NULL;
+    machine->next = NULL;
+    machine->finish_time = 0;
+    
+
     if (xr_is_empty(xr)) {
         xr->front = machine;
     } else {
         xr->rear->next = machine;
     }
 
-    xr->rear = machine;
+    xr->rear = machine; 
 }
 
 XRMachineManager *xr_create() {
@@ -38,9 +49,8 @@ XRMachineManager *xr_create() {
         exit(1);
     }
 
-    for(int i = 0; i < 5; i++) {
-        xr_insert(xr, i);
-    }
+    xr->front = NULL;
+    xr->rear = NULL;
 
     return xr;
 }
@@ -61,7 +71,7 @@ void xr_add_patient(XRMachine *machine, Patient *patient, int time) {
     machine->finish_time = time;
 }
 
-int xr_id(XRMachine *machine) {
+int xr_get_id(XRMachine *machine) {
     return machine->id;
 }
 

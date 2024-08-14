@@ -1,6 +1,7 @@
 #include "../include/Exam.h"
 #include "../include/ExamPriorityQueue.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 struct examPriorityQueue
 {
@@ -71,6 +72,9 @@ void epq_insert(ExamPriorityQueue *epq, Exam *exam) {
             current->prev = node;
         }
     }
+    
+    free(current);
+    free(previous);
 }
 
 void epq_destroy(ExamPriorityQueue *epq) {
