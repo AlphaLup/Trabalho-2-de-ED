@@ -63,7 +63,7 @@ int main() {
 
 
     // Mensagem de boas-vindas
-    printf("#############################################\n##  Bem-vindo ao Hospital Imagine Dragons  ##\n#############################################\n\nRelatórios serão printados a cada %d unidades de tempo!", LOOP_TIME);
+    printf("#############################################\n##  Bem-vindo ao Hospital Imagine Dragons  ##\n#############################################\n\nRelatórios serão impressos a cada %d unidades de tempo!", LOOP_TIME);
 
     // Loop de passagem de tempo
     for(int i = 0; i < LOOP_TIME; i++) {

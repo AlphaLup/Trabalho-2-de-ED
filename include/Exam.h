@@ -1,8 +1,6 @@
 #ifndef EXAM_H
 #define EXAM_H
 
-#include <time.h>
-
 // define a estrutura do exame
 typedef struct exam Exam;
 
@@ -34,5 +32,9 @@ int get_exam_time(Exam *exam);
 // obter a prioridade do exame
 // tipo de retorno: int
 int get_exam_priority(Exam *exam);
+
+// obter a condição do exame
+// tipo de retorno: char *
+char *get_exam_condition(Exam *exam);
 
 #endif

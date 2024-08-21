@@ -45,7 +45,7 @@ void save_patient(Patient *patient) {
     // escreve os dados do paciente no arquivo
     fprintf(file, "%d\n", patient->id);
     fprintf(file, "%s\n", patient->name);
-    fprintf(file, "%s", patient->register_time);
+    fprintf(file, "%d", patient->register_time);
 
     // fecha o arquivo
     fclose(file);
