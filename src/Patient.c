@@ -9,14 +9,12 @@ struct patient
 {
     int id;
     char name[100];
-    struct tm * register_time;
+    int register_time;
 };
 
 // cria um novo paciente e salva os dados no arquivo db_patient.txt
-Patient *create_patient(int id, const char *name) {
+Patient *create_patient(int id, const char *name, int register_time) {
     Patient *new_patient;
-    time_t current_time = time(NULL);
-    struct tm *register_time = localtime(&current_time);    
 
     // aloca memória para o novo paciente
     new_patient = (Patient *)malloc(sizeof(Patient));
@@ -47,7 +45,7 @@ void save_patient(Patient *patient) {
     // escreve os dados do paciente no arquivo
     fprintf(file, "%d\n", patient->id);
     fprintf(file, "%s\n", patient->name);
-    fprintf(file, "%s", asctime(patient->register_time));
+    fprintf(file, "%s", patient->register_time);
 
     // fecha o arquivo
     fclose(file);
@@ -74,7 +72,7 @@ char * get_patient_name(Patient *patient) {
 }
 
 // obtém a data de nascimento de um paciente
-struct tm * get_patient_register_date(Patient *patient) {
+int get_patient_register_date(Patient *patient) {
     // retorna um ponteiro referenciando a estrutura tm de <time.h>
     return patient->register_time;
 }

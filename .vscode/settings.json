@@ -5,6 +5,7 @@
         "*.tsx": "typescriptreact",
         ".env.*": "dotenv",
         ".prettierrc": "json",
-        "errno.h": "c"
+        "errno.h": "c",
+        "report.h": "c"
     }
 }

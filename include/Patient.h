@@ -8,7 +8,7 @@ typedef struct patient Patient;
 
 // criar um novo paciente
 // tipo de retorno: Patient * p --> (ponteiro para a estrutura do paciente)
-Patient *create_patient(int id, const char *name);
+Patient *create_patient(int id, const char *name, int register_time);
 
 // salvar os dados de um paciente no arquivo db_patient.txt
 void save_patient(Patient *patient);
@@ -27,6 +27,6 @@ char * get_patient_name(Patient *patient);
 
 // obter a data de nascimento de um paciente
 // retorna um ponteiro referenciando a estrutura tm de <time.h>
-struct tm * get_patient_register_date(Patient *patient);
+int get_patient_register_date(Patient *patient);
 
 #endif

@@ -1,6 +1,7 @@
 #include "../include/Patient.h"
 #include "../include/PatientQueue.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 struct patientQueue
 {
@@ -60,7 +61,7 @@ void pq_insert(PatientQueue *pq, Patient *patient) {
 Patient *pq_remove(PatientQueue *pq) {
     if(pq == NULL || pq_is_empty(pq)) {
         perror("A fila de pacientes está vazia ou não foi inicializada");
-        return;
+        return NULL;
     }
 
     PatientNode *node = pq->front;
@@ -73,7 +74,7 @@ Patient *pq_remove(PatientQueue *pq) {
 
     pq->size --;
 
-    free(node);
+    return node->data_patient;
 }
 
 // Libera a memória alocada para a fila de pacientes
