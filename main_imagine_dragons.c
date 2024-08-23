@@ -214,6 +214,6 @@ void hospital_record(int num_patients, int num_exam, int num_reports, int epq_ti
     print_average_time_report();    
     printf("Número de pacientes que esperaram mais de 7200 unidades de tempo: %d\n\n", count_limit);
 
-    Sleep(10);
+    sleep(10);
 }
 
