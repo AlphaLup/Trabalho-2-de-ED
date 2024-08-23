@@ -77,15 +77,36 @@ void epq_insert(ExamPriorityQueue *epq, Exam *exam) {
     free(previous);
 }
 
+// Remove o paciente do início da fila de pacientes (prioridade)
+Exam *epq_remove(ExamPriorityQueue *epq) {
+    ExamPriorityNode *node = epq->front;
+    Exam *exam = node->data_exam;
+
+    if (epq->front == epq->rear) {
+        epq->front = NULL;
+        epq->rear = NULL;
+    } else {
+        epq->front = epq->front->next;
+        epq->front->prev = NULL;
+    }
+
+    free(node);
+    printf("Exame removido com sucesso!\n");
+    return exam;
+}
+
 void epq_destroy(ExamPriorityQueue *epq) {
+    if(epq == NULL) {
+        perror("A fila exame não foi inicializada");
+        return;
+    }
+    
     ExamPriorityNode *current = epq->front;
-    ExamPriorityNode *next;
 
     while (current != NULL) {
-        next = current->next;
-        destroy_exam(current->data_exam);
-        free(current);
-        current = next;
+        current = current->next;
+        destroy_exam(current->prev->data_exam);
+        free(current->prev);
     }
 
     free(epq);

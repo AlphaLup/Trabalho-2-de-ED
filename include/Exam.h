@@ -37,4 +37,8 @@ int get_exam_priority(Exam *exam);
 // tipo de retorno: char *
 char *get_exam_condition(Exam *exam);
 
+// obter o exame pelo id
+// tipo de retorno: Exam *
+Exam *get_exam_by_id(int id);
+
 #endif

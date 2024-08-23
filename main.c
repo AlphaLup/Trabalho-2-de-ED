@@ -8,6 +8,9 @@
 #include "./include/XRMachineManager.h"
 #include "./include/ExamPriorityQueue.h"
 
+
+
+// Main function
 int main(){
     // Gerando uma lista com 20 nomes diferentes
     char* names[20] = {"João","Maria","Pedro","Ana","Carlos","Mariana","Lucas","Julia","Fernando","Camila","Gustavo","Isabela","Rafael","Larissa","Rodrigo","Amanda","Diego","Natália","Marcelo","Letícia"};

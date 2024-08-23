@@ -27,6 +27,10 @@ char * get_patient_name(Patient *patient);
 
 // obter a data de nascimento de um paciente
 // retorna um ponteiro referenciando a estrutura tm de <time.h>
-int get_patient_register_date(Patient *patient);
+int get_patient_register_time(Patient *patient);
+
+// obet patient por id
+// retorna um ponteiro para a estrutura do paciente
+Patient *get_patient_by_id(int id);
 
 #endif

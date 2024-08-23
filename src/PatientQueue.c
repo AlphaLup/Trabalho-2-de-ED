@@ -92,22 +92,3 @@ void pq_destroy(PatientQueue *pq) {
         free(temp);
     }
 }
-
-// Imprime os elementos da fila de pacientes
-// * NÃO SEI SE ENTRA NO TRABALHO *
-void pq_print(PatientQueue *pq) {
-    int count = 0;
-
-    if (pq == NULL) {
-        perror("A fila de pacientes não foi inicializada");
-        return;
-    }
-
-    PatientNode *node = pq->front;
-
-    while(node != NULL) {
-        count++;
-        printf("Paciente %d\n  ID: %d\n  Nome: %s", count, get_patient_id(node->data_patient), get_patient_name(node->data_patient));
-        node = node->next;
-    }
-}

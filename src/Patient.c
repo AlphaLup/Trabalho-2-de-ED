@@ -61,7 +61,6 @@ void destroy_patient(Patient *patient) {
 
 // obtém o ID de um paciente
 int get_patient_id(Patient *patient) {
-    printf("ID: %d\n", patient->id);
     return patient->id;
 }
 
@@ -72,7 +71,39 @@ char * get_patient_name(Patient *patient) {
 }
 
 // obtém a data de nascimento de um paciente
-int get_patient_register_date(Patient *patient) {
+int get_patient_register_time(Patient *patient) {
     // retorna um ponteiro referenciando a estrutura tm de <time.h>
     return patient->register_time;
+}
+
+Patient *get_patient_by_id(int id) {
+    // abre o arquivo para leitura
+    FILE *file = fopen("db_patient.txt", "r");
+    if (!file) {
+        perror("Falha ao abrir o arquivo");
+        exit(1);
+    }
+
+    // aloca memória para a estrutura do paciente
+    Patient *patient = (Patient *)malloc(sizeof(Patient));
+    if (patient == NULL) {
+        perror("Falha ao alocar memória para o paciente");
+        exit(1);
+    }
+
+    // lê os dados do arquivo e salva na estrutura do paciente
+    while (!feof(file)){
+        fscanf(file, "%d", &patient->id);
+        fscanf(file, "%s", patient->name);
+        fscanf(file, "%d", &patient->register_time);
+        if (patient->id == id) {
+            fclose(file);
+            return patient;
+        }
+    }
+
+    // fecha o arquivo
+    fclose(file);
+
+    return NULL;
 }

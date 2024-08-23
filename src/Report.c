@@ -39,7 +39,7 @@ void add_condition(Report *report, Exam *exam) {
 }
 
 void save_report(Report *report) {
-    FILE *file = fopen("db_report.txt", "wa");
+    FILE *file = fopen("db_report.txt", "w");
     if (file == NULL) {
         perror("Falha ao abrir o arquivo");
         exit(1);
@@ -57,6 +57,8 @@ void save_report(Report *report) {
 
 Report *create_report(int id, Exam *exam, int register_time) {
     Report *rep;
+
+    printf("Criando report...\n");
 
     rep = (Report *)malloc(sizeof(Report));
     if (rep == NULL) {
@@ -81,6 +83,78 @@ Report *create_report(int id, Exam *exam, int register_time) {
     return rep;
 }
 
+void print_average_time_report() {
+    float normal_time, bronquite_time, pneumonia_time, covid_time, embolia_time, derrame_time, fibrose_time, tuberculose_time, cancer_time = 0;
+    int normal_count, bronquite_count, pneumonia_count, covid_count, embolia_count, derrame_count, fibrose_count, tuberculose_count, cancer_count = 0;
+
+    FILE *file = fopen("db_report.txt", "r");
+    if (file == NULL) {
+        printf("0\n");
+    } else {
+
+        int rep_id, exam_id, register_time;
+        char condition[20];
+
+        while (!feof(file)) {
+            fscanf(file, "%d", &rep_id);
+            fscanf(file, "%d", &exam_id);
+            fscanf(file, "%s", condition);
+            fscanf(file, "%d", &register_time);
+
+            Exam *exam = get_exam_by_id(exam_id);
+
+            if (strcmp(condition, "Saúde Normal") == 0) {
+                normal_time += (register_time - get_exam_time(exam));
+                normal_count++;
+            } else if (strcmp(condition, "Bronquite") == 0) {
+                bronquite_time += (register_time - get_exam_time(exam));
+                bronquite_count++;
+            } else if (strcmp(condition, "Pneumonia") == 0) {
+                pneumonia_time += (register_time - get_exam_time(exam));
+                pneumonia_count++;
+            } else if (strcmp(condition, "COVID") == 0) {
+                covid_time += (register_time - get_exam_time(exam));
+                covid_count++;
+            } else if (strcmp(condition, "Embolia pulmonar") == 0) {
+                embolia_time += (register_time - get_exam_time(exam));
+                embolia_count++;
+            } else if (strcmp(condition, "Derrame pleural") == 0) {
+                derrame_time += (register_time - get_exam_time(exam));
+                derrame_count++;
+            } else if (strcmp(condition, "Fibrose pulmonar") == 0) {
+                fibrose_time += (register_time - get_exam_time(exam));
+                fibrose_count++;
+            } else if (strcmp(condition, "Turbeculose") == 0) {
+                tuberculose_time += (register_time - get_exam_time(exam));
+                tuberculose_count++;
+            } else if (strcmp(condition, "Câncer de pulmão") == 0) {
+                cancer_time += (register_time - get_exam_time(exam));
+                cancer_count++;
+            }
+        }
+
+        printf("\tSaúde Normal: %.2f\n", normal_time / normal_count);
+        printf("\tBronquite: %.2f\n", bronquite_time / bronquite_count);
+        printf("\tPneumonia: %.2f\n", pneumonia_time / pneumonia_count);
+        printf("\tCOVID: %.2f\n", covid_time / covid_count);
+        printf("\tEmbolia pulmonar: %.2f\n", embolia_time / embolia_count);
+        printf("\tDerrame pleural: %.2f\n", derrame_time / derrame_count);
+        printf("\tFibrose pulmonar: %.2f\n", fibrose_time / fibrose_count);
+        printf("\tTurbeculose: %.2f\n", tuberculose_time / tuberculose_count);
+        printf("\tCâncer de pulmão: %.2f\n", cancer_time / cancer_count);
+
+        fclose(file);
+    }    
+}
+
 char *get_report_condition(Report *report) {
     return report->condition;
+}
+
+int get_report_register_time(Report *report) {
+    return report->register_time;
+}
+
+int get_report_exam_id(Report *report) {
+    return get_exam_id(get_exam_by_id(report->exam_id));
 }

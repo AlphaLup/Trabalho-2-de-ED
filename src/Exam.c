@@ -132,3 +132,45 @@ int get_exam_priority(Exam *exam) {
     // retorna a prioridade do exame
     return exam->priority;
 }
+
+Exam * get_exam_by_id(int id) {
+    FILE *file = fopen("db_exam.txt", "r");
+    if (file == NULL) {
+        perror("Falha ao abrir o arquivo");
+        exit(1);
+    }
+
+    // aloca memória para o exame
+    Exam *exam = (Exam *) malloc (sizeof(Exam));
+    if(exam == NULL) {
+        perror("Falha ao alocar memória para o exame");
+        exit(1);
+    }
+
+    // lê os dados do exame
+    while (!feof(file)) {
+        fscanf(file, "%d\n", &exam->id);
+
+        if (exam->id == id) {
+            fscanf(file, "%d\n", &exam->patient_id);
+            fscanf(file, "%d\n", &exam->rx_id);
+            fscanf(file, "%d\n", &exam->register_time);
+            fscanf(file, "%s\n", exam->condition_IA);
+            fscanf(file, "%d\n", &exam->priority);
+            return exam;
+        } else {
+            // Skip the rest of the information
+            fscanf(file, "%*[^\n]\n"); // Skip patient_id
+            fscanf(file, "%*[^\n]\n"); // Skip rx_id
+            fscanf(file, "%*[^\n]\n"); // Skip register_time
+            fscanf(file, "%*[^\n]\n"); // Skip condition_IA
+            fscanf(file, "%*[^\n]\n"); // Skip priority
+        }
+    }
+    
+    // fecha o arquivo
+    fclose(file);
+
+    // retorna o exame
+    return exam;
+}
