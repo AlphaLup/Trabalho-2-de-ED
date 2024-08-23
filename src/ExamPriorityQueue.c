@@ -91,7 +91,6 @@ Exam *epq_remove(ExamPriorityQueue *epq) {
     }
 
     free(node);
-    printf("Exame removido com sucesso!\n");
     return exam;
 }
 

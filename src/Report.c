@@ -39,7 +39,7 @@ void add_condition(Report *report, Exam *exam) {
 }
 
 void save_report(Report *report) {
-    FILE *file = fopen("db_report.txt", "w");
+    FILE *file = fopen("db_report.txt", "a");
     if (file == NULL) {
         perror("Falha ao abrir o arquivo");
         exit(1);
@@ -57,8 +57,6 @@ void save_report(Report *report) {
 
 Report *create_report(int id, Exam *exam, int register_time) {
     Report *rep;
-
-    printf("Criando report...\n");
 
     rep = (Report *)malloc(sizeof(Report));
     if (rep == NULL) {

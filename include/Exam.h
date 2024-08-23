@@ -41,4 +41,8 @@ char *get_exam_condition(Exam *exam);
 // tipo de retorno: Exam *
 Exam *get_exam_by_id(int id);
 
+// imprimir um exame
+// tipo de retorno: void
+void print_exam(Exam *exam);
+
 #endif

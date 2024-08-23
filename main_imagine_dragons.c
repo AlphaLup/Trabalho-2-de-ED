@@ -39,9 +39,9 @@ int main() {
 
 
     // Criando as variáveis de controle para as máquinas e pacientes
-    XRMachine *mach_aux;
-    Patient *patient_aux;
-    Exam *exam_aux;
+    XRMachine *mach_aux = NULL;
+    Patient *patient_aux = NULL;
+    Exam *exam_aux = NULL;
 
     // Fila de pacientes sem prioridade
     PatientQueue *pq = pq_create();
@@ -75,7 +75,6 @@ int main() {
         if (i % 4320 == 0 && i != 0) {
             hospital_record(pat_id, count_exam, count_reports, epq_time, count_limit);
         }
-        printf("Tempo: %d\n", i);
         
         /*#######################################
         ##        Fila de pacientes            ##      
@@ -89,12 +88,12 @@ int main() {
             // Cria um paciente com o ID, nome e data de registro
             int name_index = rand() % 20;
             patient_aux = create_patient(pat_id, names[name_index], i);
-
-            // Insere paciente na fila
-            pq_insert(pq, patient_aux);
-
+            
             // Controle do ID do paciente
             pat_id ++;
+
+            // Insere paciente na fila
+            pq_insert(pq, patient_aux);            
         }
 
         /*########################################
@@ -116,7 +115,7 @@ int main() {
             if (patient != NULL) {
                 int patient_id = get_patient_id(patient);
                 int xr_id = xr_get_id(mach_aux);
-                
+
                 Exam *exam = create_exam(exam_id, patient_id, xr_id, i);
                 count_exam++;
                 if (exam != NULL) {
@@ -147,30 +146,43 @@ int main() {
         /*######################
         ##    Medic Report    ##
         ######################*/    
-        
+
+        // Verifica se há algum exame pronto
         if (exam_aux == NULL) {
+
             // Verifica se há algum exame pronto
-            exam_aux = epq_remove(epq);
-            cooldown = i + 30;
-        } else if (i == cooldown) {
-            // Cria um laudo médico
-            Report * r = create_report(rep_id, exam_aux, i);
-            if (r == NULL) {
-                printf("Erro ao criar laudo!\n\n");
-                return 1;
+            if (!epq_is_empty(epq)) {
+                exam_aux = epq_remove(epq);
+                cooldown = i + 30;
             }
-            count_reports++;
-            epq_time += i - get_exam_time(exam_aux);
-            
-            // Variaveis auxiliares para achar o patient id pelo report
-            int ex_id = get_report_exam_id(r);
-            int pa_id = get_exam_patient_id(get_exam_by_id(ex_id));
-            
-            // Verifica se o paciente esperou mais de 7200 unidades de tempo
-            if (get_report_register_time(r) - get_patient_register_time(get_patient_by_id(pa_id)) > 7200) {
-                count_limit++;
+        } else {
+            if (i == cooldown) {
+                // Cria um laudo médico
+                Report * r = create_report(rep_id, exam_aux, i);
+                if (r == NULL) {
+                    printf("Erro ao criar laudo!\n\n");
+                    return 1;
+                }
+                rep_id++;
+                count_reports++;
+                epq_time += i - get_exam_time(exam_aux);
+                
+                // Variaveis auxiliares para achar o patient id pelo report
+                int ex_id = get_report_exam_id(r);
+                printf("ex_id %d\n", ex_id);
+                int pa_id = get_exam_patient_id(get_exam_by_id(ex_id));
+                printf("pa_id %d\n", pa_id);
+                int rp_rt = get_report_register_time(r);
+                printf("rp_rt %d\n", rp_rt);
+                int rt_p = get_patient_register_time(get_patient_by_id(pa_id));
+                printf("rt_p %d\n\n", rt_p);
+                
+                // Verifica se o paciente esperou mais de 7200 unidades de tempo
+                if (rp_rt - rt_p > 7200) {
+                    count_limit++;
+                }
+                exam_aux = NULL;
             }
-            exam_aux = NULL;
         }
 
         

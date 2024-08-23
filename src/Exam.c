@@ -47,7 +47,7 @@ void ai_report(Exam *exam) {
 }
 
 void save_exam(Exam *exam) {
-    FILE *file = fopen("db_exam.txt", "w");
+    FILE *file = fopen("db_exam.txt", "a");
     if (file == NULL) {
         perror("Falha ao abrir o arquivo");
         exit(1);
@@ -173,4 +173,12 @@ Exam * get_exam_by_id(int id) {
 
     // retorna o exame
     return exam;
+}
+void print_exam(Exam *exam) {
+    printf("ID: %d\n", get_exam_id(exam));
+    printf("Patient ID: %d\n", get_exam_patient_id(exam));
+    printf("RX ID: %d\n", get_exam_rx_id(exam));
+    printf("Register Time: %d\n", get_exam_time(exam));
+    printf("Condition: %s\n", get_exam_condition(exam));
+    printf("Priority: %d\n", get_exam_priority(exam));
 }

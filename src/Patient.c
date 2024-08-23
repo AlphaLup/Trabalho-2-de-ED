@@ -36,7 +36,7 @@ Patient *create_patient(int id, const char *name, int register_time) {
 
 void save_patient(Patient *patient) {
     // abre o arquivo para escrita
-    FILE *file = fopen("db_patient.txt", "a");
+    FILE *file = fopen("db_patient.txt", "a+");
     if (!file) {
         perror("Falha ao abrir o arquivo");
         exit(1);

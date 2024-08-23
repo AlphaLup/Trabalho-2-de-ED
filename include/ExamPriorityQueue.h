@@ -22,5 +22,8 @@ void epq_insert(ExamPriorityQueue *epq, Exam *exam);
 // tipo de retorno: Exam *
 Exam * epq_remove(ExamPriorityQueue *epq);
 
+// verifica se a fila de pacientes está vazia
+// tipo de retorno: int
+int epq_is_empty(ExamPriorityQueue *epq);
 
 #endif
