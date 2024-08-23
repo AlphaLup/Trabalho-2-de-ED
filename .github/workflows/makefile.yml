@@ -16,3 +16,6 @@ jobs:
 
     - name: Make Clean
       run: make clean
+
+    - name: Run Project
+      run: ./output
