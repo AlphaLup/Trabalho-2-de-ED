@@ -27,7 +27,7 @@ This project is a Hospital Management System designed to simulate the management
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/AlphaLup/Trabalho-2-de-ED.git
 cd <repository-directory>
 ```
 2. Compile the project:
@@ -40,7 +40,7 @@ make
 ```bash
 make run
 ```
-or
+  or
 ```bash
 ./output
 ```
