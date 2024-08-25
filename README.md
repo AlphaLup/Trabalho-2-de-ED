@@ -39,7 +39,9 @@ make
 
 ```bash
 make run
+```
 or
+```bash
 ./output
 ```
 
