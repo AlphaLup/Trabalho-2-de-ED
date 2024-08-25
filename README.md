@@ -63,6 +63,7 @@ The main simulation is run through the `main_imagine_dragons.c` file. It initial
 - `PatientQueue.h`: Defines the structure and functions for managing a queue of patients.
 - `XRMachineManager.h`: Defines the structure and functions for managing X-ray machines.
 - `ExamPriorityQueue.h`: Defines the structure and functions for managing a priority queue of exams.
+- `Report.h`: Defines the structure and functions for managing reports.
 ### Source Files
 - `Patient.c`: Implements the functions for managing patients.
 - `Exam.c`: Implements the functions for managing exams.
