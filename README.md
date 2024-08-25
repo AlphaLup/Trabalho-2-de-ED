@@ -29,10 +29,6 @@ This project is a Hospital Management System designed to simulate the management
 git clone <repository-url>
 cd <repository-directory>
 ```
-```bash
-git clone <repository-url>
-cd <repository-directory>
-```
 2. Compile the project:
 
 ```bash
