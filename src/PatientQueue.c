@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+// Estrutura da fila de pacientes
 struct patientQueue
 {
     PatientNode *front; // ponteiro para o primeiro nó da fila
@@ -10,6 +11,7 @@ struct patientQueue
     int size; // tamanho da fila
 };
 
+// Estrutura de um nó da fila de pacientes
 struct patientNode
 {
     Patient *data_patient; // ponteiro para a estrutura do paciente

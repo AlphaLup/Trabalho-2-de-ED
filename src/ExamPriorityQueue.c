@@ -11,17 +11,17 @@ struct examPriorityQueue
 
 struct examPriorityNode
 {
-    Exam *data_exam; // ponteiro para a estrutura do paciente
+    Exam *data_exam; // ponteiro para a estrutura do exame
     ExamPriorityNode *next; // ponteiro para o próximo nó da fila
     ExamPriorityNode *prev; // ponteiro para o nó anterior da fila
 };
 
-// Cria uma nova fila de pacientes vazia
+// Cria uma nova fila de exames vazia
 ExamPriorityQueue *epq_create() {
     ExamPriorityQueue *epq = (ExamPriorityQueue *)malloc(sizeof(ExamPriorityQueue));
     
     if(epq == NULL) {
-        perror("Falha ao alocar memória para a fila de pacientes");
+        perror("Falha ao alocar memória para a fila de exames");
         exit(1);
     }
 
@@ -30,14 +30,23 @@ ExamPriorityQueue *epq_create() {
     return epq;
 };
 
-// Verifica se a fila de pacientes está vazia
+// Verifica se a fila de exames está vazia
 int epq_is_empty(ExamPriorityQueue *epq) {
     return epq->front == NULL;
 };
 
-// Insere um paciente ao final da fila de pacientes (prioridade)
+// Insere um exame ao final da fila de exames (prioridade)
 void epq_insert(ExamPriorityQueue *epq, Exam *exam) {
+    // aloca memória para o novo nó
     ExamPriorityNode *node = (ExamPriorityNode *)malloc(sizeof(ExamPriorityNode));
+
+    // verifica se a alocação foi bem sucedida
+    if(node == NULL) {
+        perror("Falha ao alocar memória para o nó da fila de exames");
+        exit(1);
+    }
+
+    // define os valores do novo nó
     ExamPriorityNode *current = epq->front;
     ExamPriorityNode *previous = NULL;
 
@@ -45,40 +54,45 @@ void epq_insert(ExamPriorityQueue *epq, Exam *exam) {
     node->next = NULL;
     node->prev = NULL;
 
-    if (epq_is_empty(epq)) {
+    // verifica se a fila está vazia e insere o nó no início
+    if (current == NULL) {
         epq->front = node;
         epq->rear = node;
     } else {
-        while (current != NULL && get_exam_priority(current->data_exam) > get_exam_priority(exam)) {
+        // percorre a fila até encontrar a posição correta para inserir o nó
+        while (current != NULL && get_exam_priority(current->data_exam) >= get_exam_priority(exam)) {
             previous = current;
             current = current->next;
         }
 
         if (previous == NULL) {
-            // Insert at the front of the queue
+            // Insere no início da fila
             node->next = epq->front;
             epq->front->prev = node;
             epq->front = node;
         } else if (current == NULL) {
-            // Insert at the end of the queue
+            // Insere no final da fila
             previous->next = node;
             node->prev = previous;
             epq->rear = node;
         } else {
-            // Insert in the middle of the queue
+            // Insere no meio da fila
             previous->next = node;
             node->prev = previous;
             node->next = current;
             current->prev = node;
         }
     }
-    
-    free(current);
-    free(previous);
 }
 
-// Remove o paciente do início da fila de pacientes (prioridade)
+// Remove o exame do início da fila de exames (prioridade)
 Exam *epq_remove(ExamPriorityQueue *epq) {
+    
+    if (epq_is_empty(epq)) {
+        perror("A fila de exames está vazia");
+        return NULL;
+    }
+
     ExamPriorityNode *node = epq->front;
     Exam *exam = node->data_exam;
 
@@ -96,7 +110,7 @@ Exam *epq_remove(ExamPriorityQueue *epq) {
 
 void epq_destroy(ExamPriorityQueue *epq) {
     if(epq == NULL) {
-        perror("A fila exame não foi inicializada");
+        perror("A fila de exames não foi inicializada");
         return;
     }
     

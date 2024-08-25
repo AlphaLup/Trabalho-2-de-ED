@@ -36,16 +36,14 @@ Patient *create_patient(int id, const char *name, int register_time) {
 
 void save_patient(Patient *patient) {
     // abre o arquivo para escrita
-    FILE *file = fopen("db_patient.txt", "a+");
+    FILE *file = fopen("db_patient.txt", "a");
     if (!file) {
         perror("Falha ao abrir o arquivo");
         exit(1);
     }
     
     // escreve os dados do paciente no arquivo
-    fprintf(file, "%d\n", patient->id);
-    fprintf(file, "%s\n", patient->name);
-    fprintf(file, "%d", patient->register_time);
+    fprintf(file, "%d %s %d\n", patient->id, patient->name, patient->register_time);
 
     // fecha o arquivo
     fclose(file);
@@ -91,18 +89,21 @@ Patient *get_patient_by_id(int id) {
         exit(1);
     }
 
+    int id_aux;
+    char line[100];
+
     // lê os dados do arquivo e salva na estrutura do paciente
-    while (!feof(file)){
-        fscanf(file, "%d", &patient->id);
-        fscanf(file, "%s", patient->name);
-        fscanf(file, "%d", &patient->register_time);
-        if (patient->id == id) {
+    while (fgets(line, sizeof(line), file)) {
+        sscanf(line, "%d", &id_aux);
+        if (id_aux == id) {
+            sscanf(line, "%d %s %d", &patient->id, patient->name, &patient->register_time);
             fclose(file);
             return patient;
         }
+
     }
 
-    // fecha o arquivo
+    // fecha o arquivo e retorna NULL caso não encontre o paciente
     fclose(file);
 
     return NULL;

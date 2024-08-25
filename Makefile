@@ -34,11 +34,14 @@ run: $(TARGET)
 	./$(TARGET)
 
 # Compile and run the program
-all: compile run
-
+all: compile clean run 
 # Clean up: remove object files and the target program
 clean:
+ifeq ($(OS),Windows_NT)
+	del /Q $(subst /,\,$(OBJS)) $(TARGET)
+else
 	rm -f $(OBJS) $(TARGET)
+endif
 
 # Compile each source file into an object file: <file>.o depends on <file>.c
 %.o: %.c

@@ -1,12 +1,1393 @@
-1
-1
-COVID
-48
-2
-5
-Bronquite
-79
-1
-1
-Câncer de pulmão
-45
+1 1 42 Bronquite
+2 3 73 Câncer de pulmão
+3 7 104 Câncer de pulmão
+4 9 135 Câncer de pulmão
+5 11 166 Turbeculose
+6 12 197 Câncer de pulmão
+7 21 228 Câncer de pulmão
+8 25 259 Câncer de pulmão
+9 32 290 Câncer de pulmão
+10 54 321 Câncer de pulmão
+11 15 352 Fibrose pulmonar
+12 49 383 Fibrose pulmonar
+13 69 414 Câncer de pulmão
+14 71 445 Saúde Normal
+15 75 476 Saúde Normal
+16 78 507 Câncer de pulmão
+17 79 538 Câncer de pulmão
+18 88 569 Câncer de pulmão
+19 89 600 Câncer de pulmão
+20 100 631 Câncer de pulmão
+21 108 662 Câncer de pulmão
+22 55 693 COVID
+23 131 724 Saúde Normal
+24 134 755 Saúde Normal
+25 137 786 Câncer de pulmão
+26 138 817 Câncer de pulmão
+27 152 848 Câncer de pulmão
+28 159 879 Câncer de pulmão
+29 160 910 Câncer de pulmão
+30 163 941 Câncer de pulmão
+31 167 972 Câncer de pulmão
+32 173 1003 Câncer de pulmão
+33 174 1034 Câncer de pulmão
+34 187 1065 Câncer de pulmão
+35 192 1096 Câncer de pulmão
+36 200 1127 Câncer de pulmão
+37 204 1158 Câncer de pulmão
+38 225 1189 Câncer de pulmão
+39 63 1220 Turbeculose
+40 247 1251 Câncer de pulmão
+41 253 1282 Câncer de pulmão
+42 262 1313 Câncer de pulmão
+43 67 1344 Turbeculose
+44 269 1375 Câncer de pulmão
+45 271 1406 Câncer de pulmão
+46 98 1437 Fibrose pulmonar
+47 99 1468 Turbeculose
+48 106 1499 Fibrose pulmonar
+49 299 1530 Câncer de pulmão
+50 109 1561 Fibrose pulmonar
+51 111 1592 Bronquite
+52 119 1623 Fibrose pulmonar
+53 316 1654 Câncer de pulmão
+54 130 1685 Fibrose pulmonar
+55 164 1716 Fibrose pulmonar
+56 322 1747 Câncer de pulmão
+57 166 1778 Turbeculose
+58 336 1809 Câncer de pulmão
+59 343 1840 Câncer de pulmão
+60 170 1871 Fibrose pulmonar
+61 352 1902 Câncer de pulmão
+62 176 1933 Fibrose pulmonar
+63 362 1964 Saúde Normal
+64 365 1995 Câncer de pulmão
+65 368 2026 Câncer de pulmão
+66 371 2057 Câncer de pulmão
+67 380 2088 Câncer de pulmão
+68 390 2119 Câncer de pulmão
+69 180 2150 Bronquite
+70 410 2181 Câncer de pulmão
+71 414 2212 Saúde Normal
+72 205 2243 Saúde Normal
+73 212 2274 Fibrose pulmonar
+74 435 2305 Câncer de pulmão
+75 242 2336 Turbeculose
+76 444 2367 Fibrose pulmonar
+77 251 2398 Turbeculose
+78 252 2429 Turbeculose
+79 268 2460 Fibrose pulmonar
+80 272 2491 Fibrose pulmonar
+81 487 2522 Câncer de pulmão
+82 490 2553 Câncer de pulmão
+83 273 2584 Fibrose pulmonar
+84 282 2615 Fibrose pulmonar
+85 505 2646 Câncer de pulmão
+86 508 2677 Câncer de pulmão
+87 514 2708 Câncer de pulmão
+88 530 2739 Câncer de pulmão
+89 543 2770 Câncer de pulmão
+90 553 2801 Bronquite
+91 556 2832 Câncer de pulmão
+92 290 2863 Turbeculose
+93 294 2894 Turbeculose
+94 306 2925 Turbeculose
+95 317 2956 Saúde Normal
+96 585 2987 Câncer de pulmão
+97 586 3018 COVID
+98 588 3049 Saúde Normal
+99 338 3080 Fibrose pulmonar
+100 616 3111 COVID
+101 342 3142 Turbeculose
+102 629 3173 Câncer de pulmão
+103 633 3204 Câncer de pulmão
+104 647 3235 Câncer de pulmão
+105 347 3266 Turbeculose
+106 354 3297 Turbeculose
+107 661 3328 Câncer de pulmão
+108 663 3359 Câncer de pulmão
+109 375 3390 Turbeculose
+110 382 3421 Fibrose pulmonar
+111 389 3452 Fibrose pulmonar
+112 396 3483 Fibrose pulmonar
+113 697 3514 Câncer de pulmão
+114 398 3545 COVID
+115 705 3576 Câncer de pulmão
+116 401 3607 Fibrose pulmonar
+117 412 3638 Turbeculose
+118 413 3669 Fibrose pulmonar
+119 721 3700 Saúde Normal
+120 724 3731 Bronquite
+121 729 3762 Câncer de pulmão
+122 738 3793 Câncer de pulmão
+123 418 3824 Fibrose pulmonar
+124 433 3855 Turbeculose
+125 757 3886 Câncer de pulmão
+126 437 3917 Turbeculose
+127 449 3948 Saúde Normal
+128 769 3979 Câncer de pulmão
+129 771 4010 Câncer de pulmão
+130 781 4041 Câncer de pulmão
+131 786 4072 Câncer de pulmão
+132 452 4103 Fibrose pulmonar
+133 458 4134 Fibrose pulmonar
+134 466 4165 Fibrose pulmonar
+135 813 4196 Câncer de pulmão
+136 816 4227 Câncer de pulmão
+137 818 4258 Câncer de pulmão
+138 823 4289 Câncer de pulmão
+139 506 4320 Bronquite
+140 539 4351 Fibrose pulmonar
+141 541 4382 Fibrose pulmonar
+142 561 4413 Saúde Normal
+143 564 4444 Saúde Normal
+144 864 4475 Câncer de pulmão
+145 865 4506 Câncer de pulmão
+146 868 4537 Câncer de pulmão
+147 872 4568 Câncer de pulmão
+148 572 4599 Fibrose pulmonar
+149 581 4630 Turbeculose
+150 587 4661 Fibrose pulmonar
+151 593 4692 Bronquite
+152 906 4723 COVID
+153 600 4754 Fibrose pulmonar
+154 926 4785 Câncer de pulmão
+155 927 4816 Câncer de pulmão
+156 608 4847 Pneumonia
+157 941 4878 Câncer de pulmão
+158 615 4909 Fibrose pulmonar
+159 628 4940 Fibrose pulmonar
+160 632 4971 Fibrose pulmonar
+161 970 5002 Câncer de pulmão
+162 972 5033 Câncer de pulmão
+163 645 5064 Fibrose pulmonar
+164 999 5095 Câncer de pulmão
+165 654 5126 Turbeculose
+166 1005 5157 Câncer de pulmão
+167 1006 5188 Câncer de pulmão
+168 1010 5219 Câncer de pulmão
+169 1014 5250 Câncer de pulmão
+170 1021 5281 Câncer de pulmão
+171 1028 5312 Câncer de pulmão
+172 1043 5343 Câncer de pulmão
+173 1045 5374 Câncer de pulmão
+174 1049 5405 Câncer de pulmão
+175 1054 5436 Câncer de pulmão
+176 1068 5467 Pneumonia
+177 1073 5498 Saúde Normal
+178 1082 5529 Câncer de pulmão
+179 1089 5560 Câncer de pulmão
+180 1091 5591 Câncer de pulmão
+181 1094 5622 Câncer de pulmão
+182 1108 5653 Câncer de pulmão
+183 1113 5684 Câncer de pulmão
+184 1116 5715 Câncer de pulmão
+185 1135 5746 Câncer de pulmão
+186 1139 5777 Câncer de pulmão
+187 658 5808 Turbeculose
+188 660 5839 Fibrose pulmonar
+189 670 5870 Turbeculose
+190 675 5901 Fibrose pulmonar
+191 1167 5932 Câncer de pulmão
+192 1171 5963 Saúde Normal
+193 1176 5994 Câncer de pulmão
+194 1178 6025 Câncer de pulmão
+195 1187 6056 Câncer de pulmão
+196 1191 6087 Câncer de pulmão
+197 1197 6118 Embolia pulmonar
+198 1200 6149 Câncer de pulmão
+199 1213 6180 Câncer de pulmão
+200 1215 6211 Câncer de pulmão
+201 677 6242 Turbeculose
+202 681 6273 Pneumonia
+203 695 6304 Turbeculose
+204 1259 6335 Câncer de pulmão
+205 700 6366 Turbeculose
+206 702 6397 Fibrose pulmonar
+207 1273 6428 Câncer de pulmão
+208 712 6459 Fibrose pulmonar
+209 726 6490 Fibrose pulmonar
+210 1297 6521 Bronquite
+211 732 6552 Fibrose pulmonar
+212 1300 6583 Câncer de pulmão
+213 1303 6614 Câncer de pulmão
+214 1304 6645 Câncer de pulmão
+215 1308 6676 Câncer de pulmão
+216 742 6707 Turbeculose
+217 1335 6738 Câncer de pulmão
+218 1338 6769 Câncer de pulmão
+219 1344 6800 Câncer de pulmão
+220 1346 6831 Saúde Normal
+221 1349 6862 Câncer de pulmão
+222 1356 6893 Câncer de pulmão
+223 1367 6924 Saúde Normal
+224 1368 6955 Câncer de pulmão
+225 1379 6986 Câncer de pulmão
+226 750 7017 Fibrose pulmonar
+227 782 7048 Fibrose pulmonar
+228 1404 7079 Câncer de pulmão
+229 804 7110 Fibrose pulmonar
+230 805 7141 Fibrose pulmonar
+231 819 7172 Turbeculose
+232 844 7203 Turbeculose
+233 854 7234 Fibrose pulmonar
+234 1439 7265 Câncer de pulmão
+235 859 7296 Fibrose pulmonar
+236 860 7327 Fibrose pulmonar
+237 867 7358 Fibrose pulmonar
+238 871 7389 Fibrose pulmonar
+239 875 7420 Pneumonia
+240 1482 7451 Câncer de pulmão
+241 884 7482 Turbeculose
+242 890 7513 Turbeculose
+243 895 7544 Turbeculose
+244 1502 7575 Câncer de pulmão
+245 1506 7606 Câncer de pulmão
+246 1512 7637 Câncer de pulmão
+247 1523 7668 Câncer de pulmão
+248 1532 7699 Câncer de pulmão
+249 1533 7730 Derrame pleural
+250 1547 7761 Embolia pulmonar
+251 910 7792 Bronquite
+252 1562 7823 Câncer de pulmão
+253 1569 7854 Câncer de pulmão
+254 1572 7885 Câncer de pulmão
+255 1573 7916 Saúde Normal
+256 932 7947 Fibrose pulmonar
+257 942 7978 Fibrose pulmonar
+258 1600 8009 Pneumonia
+259 952 8040 Fibrose pulmonar
+260 963 8071 Fibrose pulmonar
+261 964 8102 Turbeculose
+262 969 8133 Fibrose pulmonar
+263 977 8164 Turbeculose
+264 978 8195 Turbeculose
+265 1634 8226 Câncer de pulmão
+266 1645 8257 Câncer de pulmão
+267 1652 8288 Câncer de pulmão
+268 1654 8319 Câncer de pulmão
+269 1658 8350 Câncer de pulmão
+270 1659 8381 Câncer de pulmão
+271 1667 8412 Turbeculose
+272 1668 8443 Câncer de pulmão
+273 1681 8474 Câncer de pulmão
+274 1690 8505 Câncer de pulmão
+275 1697 8536 Câncer de pulmão
+276 1707 8567 Pneumonia
+277 1710 8598 Câncer de pulmão
+278 1716 8629 Câncer de pulmão
+279 1719 8660 Câncer de pulmão
+280 992 8691 Fibrose pulmonar
+281 1743 8722 Câncer de pulmão
+282 1750 8753 Câncer de pulmão
+283 1016 8784 Turbeculose
+284 1760 8815 Câncer de pulmão
+285 1017 8846 Turbeculose
+286 1031 8877 Turbeculose
+287 1038 8908 Fibrose pulmonar
+288 1051 8939 Fibrose pulmonar
+289 1060 8970 Fibrose pulmonar
+290 1066 9001 Turbeculose
+291 1079 9032 Turbeculose
+292 1081 9063 Fibrose pulmonar
+293 1821 9094 Câncer de pulmão
+294 1084 9125 Turbeculose
+295 1087 9156 Fibrose pulmonar
+296 1090 9187 Fibrose pulmonar
+297 1093 9218 Turbeculose
+298 1857 9249 Câncer de pulmão
+299 1859 9280 Câncer de pulmão
+300 1863 9311 Câncer de pulmão
+301 1870 9342 Câncer de pulmão
+302 1879 9373 Câncer de pulmão
+303 1096 9404 Saúde Normal
+304 1893 9435 Saúde Normal
+305 1097 9466 Turbeculose
+306 1905 9497 Câncer de pulmão
+307 1910 9528 Câncer de pulmão
+308 1915 9559 Câncer de pulmão
+309 1922 9590 Câncer de pulmão
+310 1929 9621 Câncer de pulmão
+311 1940 9652 Saúde Normal
+312 1943 9683 Pneumonia
+313 1948 9714 Saúde Normal
+314 1949 9745 Câncer de pulmão
+315 1953 9776 Bronquite
+316 1964 9807 Câncer de pulmão
+317 1967 9838 Câncer de pulmão
+318 1984 9869 Câncer de pulmão
+319 1989 9900 Embolia pulmonar
+320 2002 9931 Câncer de pulmão
+321 2009 9962 Embolia pulmonar
+322 2019 9993 Câncer de pulmão
+323 1107 10024 Fibrose pulmonar
+324 2031 10055 Câncer de pulmão
+325 1132 10086 Fibrose pulmonar
+326 1133 10117 Turbeculose
+327 1134 10148 Fibrose pulmonar
+328 2050 10179 Câncer de pulmão
+329 1150 10210 Fibrose pulmonar
+330 2068 10241 Câncer de pulmão
+331 2070 10272 Câncer de pulmão
+332 2075 10303 Câncer de pulmão
+333 1152 10334 Turbeculose
+334 2091 10365 Bronquite
+335 1162 10396 Turbeculose
+336 1163 10427 Fibrose pulmonar
+337 1183 10458 Fibrose pulmonar
+338 1201 10489 Fibrose pulmonar
+339 1212 10520 Fibrose pulmonar
+340 1225 10551 Câncer de pulmão
+341 1235 10582 Fibrose pulmonar
+342 1238 10613 Turbeculose
+343 2147 10644 Câncer de pulmão
+344 2148 10675 Câncer de pulmão
+345 2150 10706 Câncer de pulmão
+346 2152 10737 Câncer de pulmão
+347 2154 10768 Câncer de pulmão
+348 2160 10799 Câncer de pulmão
+349 2170 10830 Câncer de pulmão
+350 2172 10861 Câncer de pulmão
+351 2180 10892 Câncer de pulmão
+352 2189 10923 Câncer de pulmão
+353 2202 10954 Embolia pulmonar
+354 1241 10985 Fibrose pulmonar
+355 1242 11016 Saúde Normal
+356 2228 11047 Câncer de pulmão
+357 1260 11078 Turbeculose
+358 1270 11109 Turbeculose
+359 1271 11140 Turbeculose
+360 2246 11171 Câncer de pulmão
+361 2248 11202 Câncer de pulmão
+362 2254 11233 Câncer de pulmão
+363 1327 11264 Turbeculose
+364 1328 11295 Turbeculose
+365 2276 11326 Câncer de pulmão
+366 2279 11357 Câncer de pulmão
+367 2282 11388 Câncer de pulmão
+368 2291 11419 Câncer de pulmão
+369 2304 11450 Câncer de pulmão
+370 1330 11481 Fibrose pulmonar
+371 1332 11512 Fibrose pulmonar
+372 1334 11543 Fibrose pulmonar
+373 2331 11574 Câncer de pulmão
+374 2336 11605 Câncer de pulmão
+375 1347 11636 Fibrose pulmonar
+376 1359 11667 Turbeculose
+377 2350 11698 Câncer de pulmão
+378 2354 11729 Câncer de pulmão
+379 2357 11760 Câncer de pulmão
+380 1372 11791 Fibrose pulmonar
+381 2374 11822 Câncer de pulmão
+382 2378 11853 Câncer de pulmão
+383 1380 11884 Bronquite
+384 2393 11915 Câncer de pulmão
+385 1389 11946 Turbeculose
+386 1395 11977 Derrame pleural
+387 2415 12008 Câncer de pulmão
+388 1397 12039 Fibrose pulmonar
+389 2425 12070 Câncer de pulmão
+390 2429 12101 Câncer de pulmão
+391 2444 12132 Câncer de pulmão
+392 2451 12163 Câncer de pulmão
+393 1408 12194 Turbeculose
+394 1413 12225 Turbeculose
+395 1418 12256 Turbeculose
+396 1449 12287 Fibrose pulmonar
+397 2481 12318 Câncer de pulmão
+398 1451 12349 Fibrose pulmonar
+399 1457 12380 Fibrose pulmonar
+400 1461 12411 Fibrose pulmonar
+401 1464 12442 Turbeculose
+402 2520 12473 Câncer de pulmão
+403 1466 12504 Fibrose pulmonar
+404 1487 12535 Fibrose pulmonar
+405 2529 12566 Fibrose pulmonar
+406 2542 12597 Câncer de pulmão
+407 2548 12628 Câncer de pulmão
+408 2551 12659 Câncer de pulmão
+409 1490 12690 Fibrose pulmonar
+410 1493 12721 Fibrose pulmonar
+411 1541 12752 Fibrose pulmonar
+412 1571 12783 Turbeculose
+413 2580 12814 Turbeculose
+414 1580 12845 Derrame pleural
+415 1587 12876 Turbeculose
+416 1605 12907 Fibrose pulmonar
+417 2608 12938 Saúde Normal
+418 1615 12969 Turbeculose
+419 1621 13000 Fibrose pulmonar
+420 2621 13031 Câncer de pulmão
+421 2623 13062 Câncer de pulmão
+422 2627 13093 Câncer de pulmão
+423 2635 13124 Câncer de pulmão
+424 2639 13155 Câncer de pulmão
+425 2642 13186 Câncer de pulmão
+426 2649 13217 Câncer de pulmão
+427 1624 13248 Fibrose pulmonar
+428 2675 13279 Câncer de pulmão
+429 1628 13310 Fibrose pulmonar
+430 1646 13341 Turbeculose
+431 2687 13372 Câncer de pulmão
+432 1649 13403 Fibrose pulmonar
+433 1670 13434 Turbeculose
+434 1675 13465 Fibrose pulmonar
+435 1698 13496 Saúde Normal
+436 1715 13527 Saúde Normal
+437 2716 13558 Câncer de pulmão
+438 1722 13589 Fibrose pulmonar
+439 1731 13620 Turbeculose
+440 1733 13651 Fibrose pulmonar
+441 2733 13682 Câncer de pulmão
+442 2736 13713 Fibrose pulmonar
+443 1749 13744 Fibrose pulmonar
+444 2755 13775 Câncer de pulmão
+445 1752 13806 Fibrose pulmonar
+446 2765 13837 Câncer de pulmão
+447 2767 13868 Câncer de pulmão
+448 2770 13899 Câncer de pulmão
+449 2773 13930 Câncer de pulmão
+450 2780 13961 Câncer de pulmão
+451 2784 13992 Câncer de pulmão
+452 1753 14023 Turbeculose
+453 2804 14054 Câncer de pulmão
+454 2805 14085 Câncer de pulmão
+455 2811 14116 COVID
+456 2812 14147 Bronquite
+457 2814 14178 Câncer de pulmão
+458 2821 14209 Câncer de pulmão
+459 2827 14240 Câncer de pulmão
+460 2830 14271 Câncer de pulmão
+461 2836 14302 Câncer de pulmão
+462 2850 14333 Câncer de pulmão
+463 2853 14364 Câncer de pulmão
+464 2858 14395 Câncer de pulmão
+465 2866 14426 Câncer de pulmão
+466 2867 14457 Câncer de pulmão
+467 2877 14488 Câncer de pulmão
+468 2885 14519 Câncer de pulmão
+469 2892 14550 Câncer de pulmão
+470 2893 14581 Bronquite
+471 2909 14612 COVID
+472 2911 14643 Câncer de pulmão
+473 2919 14674 Pneumonia
+474 2932 14705 Câncer de pulmão
+475 2933 14736 Câncer de pulmão
+476 2955 14767 Câncer de pulmão
+477 2961 14798 Embolia pulmonar
+478 2963 14829 Câncer de pulmão
+479 2965 14860 Câncer de pulmão
+480 2975 14891 Câncer de pulmão
+481 2981 14922 Câncer de pulmão
+482 2989 14953 Câncer de pulmão
+483 2992 14984 Câncer de pulmão
+484 2996 15015 Câncer de pulmão
+485 3009 15046 Câncer de pulmão
+486 3015 15077 Câncer de pulmão
+487 1783 15108 Turbeculose
+488 3033 15139 Saúde Normal
+489 1791 15170 Fibrose pulmonar
+490 3049 15201 Saúde Normal
+491 3051 15232 Câncer de pulmão
+492 3055 15263 Câncer de pulmão
+493 3065 15294 Câncer de pulmão
+494 3066 15325 Câncer de pulmão
+495 3074 15356 Câncer de pulmão
+496 1792 15387 Fibrose pulmonar
+497 1794 15418 Turbeculose
+498 1797 15449 Fibrose pulmonar
+499 3106 15480 Câncer de pulmão
+500 1814 15511 Turbeculose
+501 3117 15542 Câncer de pulmão
+502 3120 15573 Câncer de pulmão
+503 3125 15604 Câncer de pulmão
+504 3127 15635 Câncer de pulmão
+505 3128 15666 Câncer de pulmão
+506 3130 15697 COVID
+507 3145 15728 Câncer de pulmão
+508 3154 15759 Câncer de pulmão
+509 3156 15790 Bronquite
+510 1822 15821 Turbeculose
+511 3171 15852 Câncer de pulmão
+512 3176 15883 Câncer de pulmão
+513 1832 15914 Fibrose pulmonar
+514 1833 15945 Fibrose pulmonar
+515 1866 15976 Fibrose pulmonar
+516 1891 16007 Fibrose pulmonar
+517 3201 16038 Câncer de pulmão
+518 3207 16069 Saúde Normal
+519 3211 16100 Câncer de pulmão
+520 3217 16131 Câncer de pulmão
+521 3225 16162 Câncer de pulmão
+522 3229 16193 Câncer de pulmão
+523 3238 16224 Câncer de pulmão
+524 3239 16255 Câncer de pulmão
+525 1900 16286 Fibrose pulmonar
+526 1914 16317 Turbeculose
+527 3274 16348 Câncer de pulmão
+528 1918 16379 Fibrose pulmonar
+529 3284 16410 Câncer de pulmão
+530 3295 16441 Câncer de pulmão
+531 3296 16472 Câncer de pulmão
+532 3299 16503 Câncer de pulmão
+533 3309 16534 Câncer de pulmão
+534 1950 16565 Fibrose pulmonar
+535 3318 16596 Câncer de pulmão
+536 1973 16627 Turbeculose
+537 3331 16658 Câncer de pulmão
+538 3343 16689 Câncer de pulmão
+539 1975 16720 Turbeculose
+540 3352 16751 Câncer de pulmão
+541 1981 16782 Turbeculose
+542 3368 16813 Bronquite
+543 1982 16844 Turbeculose
+544 1991 16875 Turbeculose
+545 3386 16906 Saúde Normal
+546 3398 16937 Câncer de pulmão
+547 3406 16968 Câncer de pulmão
+548 1994 16999 Turbeculose
+549 1995 17030 Turbeculose
+550 2012 17061 Turbeculose
+551 3427 17092 COVID
+552 3428 17123 Câncer de pulmão
+553 3432 17154 Câncer de pulmão
+554 3451 17185 Câncer de pulmão
+555 2044 17216 Fibrose pulmonar
+556 2055 17247 Turbeculose
+557 2074 17278 Turbeculose
+558 2109 17309 Bronquite
+559 3484 17340 Câncer de pulmão
+560 3490 17371 Fibrose pulmonar
+561 2123 17402 Derrame pleural
+562 3502 17433 Câncer de pulmão
+563 3504 17464 Câncer de pulmão
+564 3510 17495 Saúde Normal
+565 3521 17526 Câncer de pulmão
+566 3527 17557 Câncer de pulmão
+567 2127 17588 Fibrose pulmonar
+568 3533 17619 Câncer de pulmão
+569 3539 17650 Câncer de pulmão
+570 3549 17681 Câncer de pulmão
+571 2128 17712 Fibrose pulmonar
+572 2131 17743 Fibrose pulmonar
+573 2133 17774 Fibrose pulmonar
+574 3574 17805 Câncer de pulmão
+575 2136 17836 Fibrose pulmonar
+576 2141 17867 Fibrose pulmonar
+577 2159 17898 Fibrose pulmonar
+578 2167 17929 Turbeculose
+579 3601 17960 Derrame pleural
+580 3608 17991 Câncer de pulmão
+581 3613 18022 Saúde Normal
+582 3619 18053 Câncer de pulmão
+583 3623 18084 Câncer de pulmão
+584 3629 18115 Bronquite
+585 2169 18146 Embolia pulmonar
+586 2171 18177 Turbeculose
+587 2194 18208 Fibrose pulmonar
+588 3650 18239 Câncer de pulmão
+589 3664 18270 Câncer de pulmão
+590 3667 18301 Câncer de pulmão
+591 3672 18332 Câncer de pulmão
+592 3683 18363 Câncer de pulmão
+593 3685 18394 Câncer de pulmão
+594 2195 18425 Turbeculose
+595 2204 18456 Fibrose pulmonar
+596 3707 18487 Câncer de pulmão
+597 3712 18518 Câncer de pulmão
+598 3717 18549 Câncer de pulmão
+599 2208 18580 Saúde Normal
+600 2226 18611 Fibrose pulmonar
+601 2232 18642 Turbeculose
+602 2247 18673 Turbeculose
+603 3751 18704 Câncer de pulmão
+604 3753 18735 Câncer de pulmão
+605 2257 18766 Câncer de pulmão
+606 3773 18797 Câncer de pulmão
+607 2309 18828 Turbeculose
+608 2324 18859 Fibrose pulmonar
+609 2327 18890 Fibrose pulmonar
+610 2332 18921 Turbeculose
+611 2346 18952 Turbeculose
+612 2394 18983 Turbeculose
+613 2413 19014 Turbeculose
+614 2430 19045 Turbeculose
+615 2437 19076 Turbeculose
+616 2486 19107 Saúde Normal
+617 2504 19138 Turbeculose
+618 2506 19169 Turbeculose
+619 2510 19200 Bronquite
+620 3859 19231 Câncer de pulmão
+621 2530 19262 Fibrose pulmonar
+622 2546 19293 Bronquite
+623 2550 19324 Fibrose pulmonar
+624 3882 19355 Câncer de pulmão
+625 3889 19386 Câncer de pulmão
+626 3896 19417 Câncer de pulmão
+627 3897 19448 Câncer de pulmão
+628 2552 19479 Fibrose pulmonar
+629 2556 19510 Turbeculose
+630 3918 19541 Saúde Normal
+631 3926 19572 Câncer de pulmão
+632 3934 19603 Câncer de pulmão
+633 2615 19634 Fibrose pulmonar
+634 3947 19665 Câncer de pulmão
+635 3955 19696 Câncer de pulmão
+636 3956 19727 Câncer de pulmão
+637 2626 19758 Turbeculose
+638 2636 19789 Turbeculose
+639 3975 19820 Câncer de pulmão
+640 3980 19851 Saúde Normal
+641 3981 19882 Câncer de pulmão
+642 3988 19913 Câncer de pulmão
+643 3993 19944 Câncer de pulmão
+644 4005 19975 Câncer de pulmão
+645 2638 20006 Turbeculose
+646 2666 20037 Derrame pleural
+647 4022 20068 Câncer de pulmão
+648 4025 20099 Câncer de pulmão
+649 4029 20130 Bronquite
+650 4044 20161 Câncer de pulmão
+651 4053 20192 Câncer de pulmão
+652 4066 20223 Câncer de pulmão
+653 4069 20254 Câncer de pulmão
+654 4073 20285 Câncer de pulmão
+655 2667 20316 Fibrose pulmonar
+656 2672 20347 Fibrose pulmonar
+657 4094 20378 Câncer de pulmão
+658 4099 20409 Câncer de pulmão
+659 2676 20440 Câncer de pulmão
+660 2693 20471 Fibrose pulmonar
+661 2698 20502 Fibrose pulmonar
+662 4122 20533 Turbeculose
+663 4125 20564 Câncer de pulmão
+664 4132 20595 Câncer de pulmão
+665 4134 20626 Câncer de pulmão
+666 4151 20657 Câncer de pulmão
+667 4152 20688 Câncer de pulmão
+668 2718 20719 Bronquite
+669 2732 20750 Saúde Normal
+670 2734 20781 Fibrose pulmonar
+671 4178 20812 Câncer de pulmão
+672 4184 20843 Câncer de pulmão
+673 4186 20874 Câncer de pulmão
+674 4187 20905 Câncer de pulmão
+675 4190 20936 Câncer de pulmão
+676 4206 20967 Derrame pleural
+677 4208 20998 Câncer de pulmão
+678 4209 21029 Câncer de pulmão
+679 4211 21060 Câncer de pulmão
+680 4215 21091 COVID
+681 4219 21122 Câncer de pulmão
+682 4234 21153 Câncer de pulmão
+683 2737 21184 Turbeculose
+684 4250 21215 Câncer de pulmão
+685 4251 21246 Câncer de pulmão
+686 4258 21277 Câncer de pulmão
+687 4263 21308 Câncer de pulmão
+688 4269 21339 Câncer de pulmão
+689 2761 21370 Turbeculose
+690 4280 21401 Câncer de pulmão
+691 4284 21432 Câncer de pulmão
+692 4290 21463 Câncer de pulmão
+693 4303 21494 Câncer de pulmão
+694 2763 21525 Fibrose pulmonar
+695 4310 21556 Câncer de pulmão
+696 4316 21587 Câncer de pulmão
+697 4323 21618 Câncer de pulmão
+698 2778 21649 Fibrose pulmonar
+699 2785 21680 Fibrose pulmonar
+700 4351 21711 Câncer de pulmão
+701 4356 21742 Câncer de pulmão
+702 4365 21773 Câncer de pulmão
+703 2786 21804 Derrame pleural
+704 2787 21835 Turbeculose
+705 2798 21866 Turbeculose
+706 4389 21897 Câncer de pulmão
+707 4402 21928 COVID
+708 2801 21959 Fibrose pulmonar
+709 4414 21990 Câncer de pulmão
+710 4419 22021 Câncer de pulmão
+711 2810 22052 Bronquite
+712 2820 22083 Bronquite
+713 2825 22114 Fibrose pulmonar
+714 2826 22145 Turbeculose
+715 4448 22176 Câncer de pulmão
+716 4453 22207 Câncer de pulmão
+717 4458 22238 Câncer de pulmão
+718 2838 22269 Fibrose pulmonar
+719 2841 22300 Turbeculose
+720 4476 22331 Câncer de pulmão
+721 4477 22362 Câncer de pulmão
+722 2854 22393 Saúde Normal
+723 4492 22424 Câncer de pulmão
+724 4494 22455 Bronquite
+725 2856 22486 Saúde Normal
+726 2862 22517 Turbeculose
+727 4526 22548 Câncer de pulmão
+728 2871 22579 Turbeculose
+729 4536 22610 Saúde Normal
+730 4542 22641 Câncer de pulmão
+731 4544 22672 Câncer de pulmão
+732 4546 22703 Câncer de pulmão
+733 4556 22734 Câncer de pulmão
+734 4567 22765 Câncer de pulmão
+735 4573 22796 Saúde Normal
+736 4574 22827 Câncer de pulmão
+737 4578 22858 Câncer de pulmão
+738 2872 22889 Fibrose pulmonar
+739 4600 22920 Câncer de pulmão
+740 4608 22951 Câncer de pulmão
+741 2884 22982 Fibrose pulmonar
+742 4619 23013 Câncer de pulmão
+743 4620 23044 Câncer de pulmão
+744 4625 23075 Câncer de pulmão
+745 4635 23106 Câncer de pulmão
+746 2904 23137 Fibrose pulmonar
+747 4653 23168 Saúde Normal
+748 4656 23199 Câncer de pulmão
+749 2916 23230 Fibrose pulmonar
+750 4666 23261 Câncer de pulmão
+751 2921 23292 Fibrose pulmonar
+752 4675 23323 Câncer de pulmão
+753 2927 23354 Fibrose pulmonar
+754 2952 23385 Saúde Normal
+755 4694 23416 Câncer de pulmão
+756 4701 23447 Saúde Normal
+757 2954 23478 Turbeculose
+758 2956 23509 Turbeculose
+759 4718 23540 Câncer de pulmão
+760 2957 23571 Fibrose pulmonar
+761 2962 23602 Fibrose pulmonar
+762 4737 23633 Câncer de pulmão
+763 2971 23664 Turbeculose
+764 2974 23695 Turbeculose
+765 4750 23726 Câncer de pulmão
+766 4762 23757 Câncer de pulmão
+767 4764 23788 Câncer de pulmão
+768 4782 23819 Bronquite
+769 2979 23850 Fibrose pulmonar
+770 2990 23881 Turbeculose
+771 2997 23912 Fibrose pulmonar
+772 2998 23943 Turbeculose
+773 4817 23974 Bronquite
+774 3002 24005 Turbeculose
+775 3021 24036 Fibrose pulmonar
+776 3028 24067 Turbeculose
+777 4842 24098 Câncer de pulmão
+778 4854 24129 Câncer de pulmão
+779 4861 24160 Câncer de pulmão
+780 3030 24191 Fibrose pulmonar
+781 4870 24222 Saúde Normal
+782 4874 24253 Câncer de pulmão
+783 4879 24284 Câncer de pulmão
+784 4885 24315 Bronquite
+785 3039 24346 Fibrose pulmonar
+786 3052 24377 Fibrose pulmonar
+787 4915 24408 Turbeculose
+788 3062 24439 Turbeculose
+789 3077 24470 Turbeculose
+790 4940 24501 Câncer de pulmão
+791 4944 24532 Câncer de pulmão
+792 4947 24563 Câncer de pulmão
+793 4952 24594 Câncer de pulmão
+794 3088 24625 Turbeculose
+795 3090 24656 Bronquite
+796 4977 24687 Câncer de pulmão
+797 3097 24718 Pneumonia
+798 3110 24749 Saúde Normal
+799 3113 24780 COVID
+800 5000 24811 Câncer de pulmão
+801 3133 24842 Fibrose pulmonar
+802 5015 24873 Câncer de pulmão
+803 5017 24904 Câncer de pulmão
+804 5021 24935 Câncer de pulmão
+805 5028 24966 Câncer de pulmão
+806 5029 24997 Câncer de pulmão
+807 5035 25028 Câncer de pulmão
+808 5047 25059 Câncer de pulmão
+809 3144 25090 Câncer de pulmão
+810 3159 25121 Bronquite
+811 3162 25152 Turbeculose
+812 5076 25183 Câncer de pulmão
+813 5081 25214 Fibrose pulmonar
+814 3168 25245 Turbeculose
+815 3178 25276 Turbeculose
+816 5097 25307 Câncer de pulmão
+817 3194 25338 Fibrose pulmonar
+818 5104 25369 Câncer de pulmão
+819 3196 25400 Turbeculose
+820 5116 25431 Câncer de pulmão
+821 3212 25462 Turbeculose
+822 5128 25493 Câncer de pulmão
+823 5132 25524 Câncer de pulmão
+824 3213 25555 Fibrose pulmonar
+825 3215 25586 Turbeculose
+826 3218 25617 Turbeculose
+827 5154 25648 Câncer de pulmão
+828 3236 25679 Turbeculose
+829 3237 25710 Fibrose pulmonar
+830 3245 25741 Fibrose pulmonar
+831 3268 25772 Turbeculose
+832 5185 25803 Câncer de pulmão
+833 3275 25834 Fibrose pulmonar
+834 3281 25865 Saúde Normal
+835 5198 25896 Câncer de pulmão
+836 5205 25927 Câncer de pulmão
+837 5213 25958 Câncer de pulmão
+838 3282 25989 Turbeculose
+839 3286 26020 Turbeculose
+840 3297 26051 Fibrose pulmonar
+841 3304 26082 Saúde Normal
+842 3317 26113 Turbeculose
+843 3329 26144 Fibrose pulmonar
+844 3342 26175 Turbeculose
+845 3346 26206 Turbeculose
+846 5261 26237 Câncer de pulmão
+847 5262 26268 Câncer de pulmão
+848 3353 26299 Fibrose pulmonar
+849 5285 26330 Saúde Normal
+850 5289 26361 Câncer de pulmão
+851 3365 26392 Pneumonia
+852 3373 26423 Turbeculose
+853 5319 26454 Câncer de pulmão
+854 5323 26485 Câncer de pulmão
+855 3394 26516 Turbeculose
+856 5339 26547 Câncer de pulmão
+857 3397 26578 Fibrose pulmonar
+858 3418 26609 Fibrose pulmonar
+859 3435 26640 Bronquite
+860 3438 26671 Fibrose pulmonar
+861 5367 26702 Saúde Normal
+862 5368 26733 Bronquite
+863 5370 26764 Câncer de pulmão
+864 5382 26795 Câncer de pulmão
+865 5390 26826 Câncer de pulmão
+866 3446 26857 Turbeculose
+867 3447 26888 Turbeculose
+868 5414 26919 Derrame pleural
+869 5416 26950 Câncer de pulmão
+870 5424 26981 Câncer de pulmão
+871 5427 27012 Câncer de pulmão
+872 5438 27043 Câncer de pulmão
+873 3449 27074 Turbeculose
+874 3457 27105 Embolia pulmonar
+875 5458 27136 Câncer de pulmão
+876 5464 27167 Câncer de pulmão
+877 3462 27198 Fibrose pulmonar
+878 5472 27229 Câncer de pulmão
+879 5478 27260 Câncer de pulmão
+880 5480 27291 Câncer de pulmão
+881 5490 27322 Câncer de pulmão
+882 5502 27353 Câncer de pulmão
+883 5503 27384 Saúde Normal
+884 5514 27415 Câncer de pulmão
+885 5516 27446 Câncer de pulmão
+886 5517 27477 Câncer de pulmão
+887 5526 27508 Saúde Normal
+888 5527 27539 Câncer de pulmão
+889 3463 27570 Fibrose pulmonar
+890 3471 27601 Turbeculose
+891 5553 27632 Câncer de pulmão
+892 5560 27663 Câncer de pulmão
+893 3492 27694 Turbeculose
+894 5569 27725 Câncer de pulmão
+895 5572 27756 Câncer de pulmão
+896 5573 27787 COVID
+897 5580 27818 Câncer de pulmão
+898 5592 27849 Câncer de pulmão
+899 5593 27880 Câncer de pulmão
+900 5595 27911 Câncer de pulmão
+901 5596 27942 Câncer de pulmão
+902 5597 27973 Câncer de pulmão
+903 5619 28004 Câncer de pulmão
+904 5628 28035 Câncer de pulmão
+905 5632 28066 Câncer de pulmão
+906 5650 28097 Câncer de pulmão
+907 3494 28128 Embolia pulmonar
+908 5658 28159 Câncer de pulmão
+909 3511 28190 Fibrose pulmonar
+910 3525 28221 Turbeculose
+911 5676 28252 Câncer de pulmão
+912 5687 28283 Câncer de pulmão
+913 3535 28314 COVID
+914 3553 28345 Saúde Normal
+915 3554 28376 Bronquite
+916 3560 28407 Fibrose pulmonar
+917 5712 28438 Câncer de pulmão
+918 5720 28469 Câncer de pulmão
+919 5724 28500 Bronquite
+920 5726 28531 Câncer de pulmão
+921 5729 28562 Saúde Normal
+922 3593 28593 Turbeculose
+923 3627 28624 Bronquite
+924 3628 28655 Pneumonia
+925 5765 28686 Câncer de pulmão
+926 5768 28717 Câncer de pulmão
+927 5771 28748 Câncer de pulmão
+928 5773 28779 Câncer de pulmão
+929 5782 28810 Câncer de pulmão
+930 5785 28841 Câncer de pulmão
+931 5794 28872 Câncer de pulmão
+932 3631 28903 Turbeculose
+933 5825 28934 Câncer de pulmão
+934 3644 28965 Turbeculose
+935 3646 28996 Turbeculose
+936 3652 29027 Turbeculose
+937 3693 29058 Turbeculose
+938 5849 29089 Câncer de pulmão
+939 5853 29120 Câncer de pulmão
+940 5865 29151 Câncer de pulmão
+941 5866 29182 Câncer de pulmão
+942 5870 29213 Câncer de pulmão
+943 5874 29244 Derrame pleural
+944 5875 29275 Câncer de pulmão
+945 5877 29306 Câncer de pulmão
+946 5881 29337 Câncer de pulmão
+947 5884 29368 Câncer de pulmão
+948 3711 29399 Turbeculose
+949 3728 29430 Turbeculose
+950 3729 29461 Turbeculose
+951 3732 29492 Fibrose pulmonar
+952 3738 29523 Fibrose pulmonar
+953 3752 29554 Fibrose pulmonar
+954 5941 29585 Câncer de pulmão
+955 5948 29616 Câncer de pulmão
+956 5951 29647 Câncer de pulmão
+957 5954 29678 Câncer de pulmão
+958 5957 29709 Câncer de pulmão
+959 5964 29740 Câncer de pulmão
+960 5970 29771 Câncer de pulmão
+961 5972 29802 Câncer de pulmão
+962 5978 29833 Câncer de pulmão
+963 5983 29864 Câncer de pulmão
+964 3758 29895 Turbeculose
+965 3759 29926 COVID
+966 3763 29957 Turbeculose
+967 6029 29988 Câncer de pulmão
+968 6030 30019 Câncer de pulmão
+969 6033 30050 Câncer de pulmão
+970 6037 30081 Câncer de pulmão
+971 3774 30112 Fibrose pulmonar
+972 6059 30143 Câncer de pulmão
+973 6062 30174 Câncer de pulmão
+974 6067 30205 Câncer de pulmão
+975 6075 30236 Câncer de pulmão
+976 6087 30267 Fibrose pulmonar
+977 3796 30298 Pneumonia
+978 3813 30329 Fibrose pulmonar
+979 6101 30360 Câncer de pulmão
+980 6104 30391 Câncer de pulmão
+981 3828 30422 Fibrose pulmonar
+982 3836 30453 Saúde Normal
+983 6130 30484 Câncer de pulmão
+984 3837 30515 Fibrose pulmonar
+985 3846 30546 Bronquite
+986 6147 30577 Câncer de pulmão
+987 6148 30608 Câncer de pulmão
+988 6154 30639 Câncer de pulmão
+989 6156 30670 Câncer de pulmão
+990 6162 30701 Câncer de pulmão
+991 6164 30732 Câncer de pulmão
+992 6171 30763 Câncer de pulmão
+993 6172 30794 Câncer de pulmão
+994 6179 30825 Fibrose pulmonar
+995 6185 30856 Câncer de pulmão
+996 6191 30887 Câncer de pulmão
+997 6211 30918 Câncer de pulmão
+998 6212 30949 Câncer de pulmão
+999 6229 30980 Câncer de pulmão
+1000 6234 31011 Câncer de pulmão
+1001 3849 31042 Bronquite
+1002 6253 31073 Câncer de pulmão
+1003 3854 31104 Turbeculose
+1004 3862 31135 Fibrose pulmonar
+1005 6273 31166 Câncer de pulmão
+1006 6280 31197 Saúde Normal
+1007 6286 31228 Câncer de pulmão
+1008 6287 31259 Câncer de pulmão
+1009 3874 31290 Turbeculose
+1010 6303 31321 Câncer de pulmão
+1011 3875 31352 Turbeculose
+1012 3876 31383 Turbeculose
+1013 3887 31414 Turbeculose
+1014 3905 31445 Saúde Normal
+1015 3909 31476 Turbeculose
+1016 3920 31507 Fibrose pulmonar
+1017 6353 31538 Câncer de pulmão
+1018 3923 31569 Turbeculose
+1019 6362 31600 Derrame pleural
+1020 3930 31631 Fibrose pulmonar
+1021 3931 31662 Turbeculose
+1022 3939 31693 Fibrose pulmonar
+1023 3962 31724 Fibrose pulmonar
+1024 3964 31755 Bronquite
+1025 6384 31786 Câncer de pulmão
+1026 6389 31817 Câncer de pulmão
+1027 3974 31848 Pneumonia
+1028 6405 31879 Câncer de pulmão
+1029 6408 31910 Câncer de pulmão
+1030 6410 31941 Câncer de pulmão
+1031 6416 31972 Fibrose pulmonar
+1032 6427 32003 Câncer de pulmão
+1033 3976 32034 Turbeculose
+1034 3989 32065 Turbeculose
+1035 6452 32096 Câncer de pulmão
+1036 3997 32127 Turbeculose
+1037 4004 32158 Fibrose pulmonar
+1038 6479 32189 Câncer de pulmão
+1039 4010 32220 Turbeculose
+1040 4023 32251 Fibrose pulmonar
+1041 4057 32282 Turbeculose
+1042 6497 32313 Câncer de pulmão
+1043 6506 32344 Câncer de pulmão
+1044 4059 32375 Câncer de pulmão
+1045 6518 32406 Câncer de pulmão
+1046 4068 32437 Saúde Normal
+1047 6531 32468 Saúde Normal
+1048 6536 32499 Câncer de pulmão
+1049 6539 32530 Câncer de pulmão
+1050 6547 32561 Câncer de pulmão
+1051 6551 32592 Câncer de pulmão
+1052 4078 32623 Turbeculose
+1053 6570 32654 Câncer de pulmão
+1054 6580 32685 Pneumonia
+1055 4084 32716 Fibrose pulmonar
+1056 4088 32747 Fibrose pulmonar
+1057 4101 32778 Bronquite
+1058 4103 32809 Fibrose pulmonar
+1059 4120 32840 Turbeculose
+1060 6607 32871 Câncer de pulmão
+1061 6609 32902 Câncer de pulmão
+1062 6619 32933 Câncer de pulmão
+1063 6625 32964 Câncer de pulmão
+1064 6634 32995 Câncer de pulmão
+1065 4121 33026 Fibrose pulmonar
+1066 6646 33057 Câncer de pulmão
+1067 4147 33088 Fibrose pulmonar
+1068 6655 33119 Câncer de pulmão
+1069 6664 33150 Bronquite
+1070 6670 33181 Câncer de pulmão
+1071 6673 33212 Bronquite
+1072 4166 33243 Fibrose pulmonar
+1073 6694 33274 Câncer de pulmão
+1074 6695 33305 Câncer de pulmão
+1075 6696 33336 Câncer de pulmão
+1076 6700 33367 Câncer de pulmão
+1077 6701 33398 Câncer de pulmão
+1078 6703 33429 Câncer de pulmão
+1079 6716 33460 Câncer de pulmão
+1080 6721 33491 Câncer de pulmão
+1081 6725 33522 Câncer de pulmão
+1082 6735 33553 Saúde Normal
+1083 6737 33584 Câncer de pulmão
+1084 6740 33615 Câncer de pulmão
+1085 6764 33646 Câncer de pulmão
+1086 6773 33677 Câncer de pulmão
+1087 6775 33708 Câncer de pulmão
+1088 6777 33739 Câncer de pulmão
+1089 6778 33770 Câncer de pulmão
+1090 6788 33801 Câncer de pulmão
+1091 6805 33832 Fibrose pulmonar
+1092 6817 33863 Câncer de pulmão
+1093 4197 33894 Turbeculose
+1094 4202 33925 Turbeculose
+1095 6836 33956 Câncer de pulmão
+1096 4213 33987 Fibrose pulmonar
+1097 4225 34018 Fibrose pulmonar
+1098 6849 34049 Câncer de pulmão
+1099 4241 34080 Fibrose pulmonar
+1100 4256 34111 Turbeculose
+1101 4266 34142 Fibrose pulmonar
+1102 6864 34173 Câncer de pulmão
+1103 4268 34204 Saúde Normal
+1104 6873 34235 Câncer de pulmão
+1105 6876 34266 Câncer de pulmão
+1106 4277 34297 Fibrose pulmonar
+1107 4279 34328 Fibrose pulmonar
+1108 4282 34359 Turbeculose
+1109 4287 34390 Fibrose pulmonar
+1110 4296 34421 Turbeculose
+1111 6914 34452 Câncer de pulmão
+1112 4305 34483 Pneumonia
+1113 6921 34514 Câncer de pulmão
+1114 6927 34545 Saúde Normal
+1115 6930 34576 Câncer de pulmão
+1116 4325 34607 Fibrose pulmonar
+1117 4348 34638 Turbeculose
+1118 6949 34669 Câncer de pulmão
+1119 4360 34700 Derrame pleural
+1120 4381 34731 Turbeculose
+1121 4391 34762 Fibrose pulmonar
+1122 4396 34793 Turbeculose
+1123 6979 34824 Câncer de pulmão
+1124 6984 34855 Câncer de pulmão
+1125 6987 34886 Câncer de pulmão
+1126 6991 34917 Câncer de pulmão
+1127 4409 34948 Fibrose pulmonar
+1128 4411 34979 Turbeculose
+1129 4415 35010 Turbeculose
+1130 7019 35041 Câncer de pulmão
+1131 7024 35072 Câncer de pulmão
+1132 4422 35103 Fibrose pulmonar
+1133 7038 35134 Câncer de pulmão
+1134 7042 35165 Câncer de pulmão
+1135 7045 35196 Câncer de pulmão
+1136 4431 35227 Turbeculose
+1137 4441 35258 Turbeculose
+1138 4464 35289 Turbeculose
+1139 7070 35320 Câncer de pulmão
+1140 7072 35351 Câncer de pulmão
+1141 7074 35382 Câncer de pulmão
+1142 4473 35413 Fibrose pulmonar
+1143 7103 35444 Câncer de pulmão
+1144 7107 35475 Câncer de pulmão
+1145 4475 35506 Fibrose pulmonar
+1146 7118 35537 Câncer de pulmão
+1147 7120 35568 Câncer de pulmão
+1148 7126 35599 Saúde Normal
+1149 7130 35630 Câncer de pulmão
+1150 7144 35661 Câncer de pulmão
+1151 7148 35692 Câncer de pulmão
+1152 7153 35723 Câncer de pulmão
+1153 4480 35754 Fibrose pulmonar
+1154 7173 35785 Câncer de pulmão
+1155 7176 35816 Saúde Normal
+1156 7179 35847 Câncer de pulmão
+1157 7191 35878 Câncer de pulmão
+1158 7194 35909 COVID
+1159 7196 35940 Câncer de pulmão
+1160 7198 35971 Câncer de pulmão
+1161 4490 36002 Fibrose pulmonar
+1162 7222 36033 Bronquite
+1163 7228 36064 Bronquite
+1164 7230 36095 Câncer de pulmão
+1165 7237 36126 Saúde Normal
+1166 7240 36157 Câncer de pulmão
+1167 7246 36188 Câncer de pulmão
+1168 7259 36219 Saúde Normal
+1169 4509 36250 Turbeculose
+1170 7278 36281 Câncer de pulmão
+1171 4523 36312 Saúde Normal
+1172 4529 36343 Turbeculose
+1173 4535 36374 Fibrose pulmonar
+1174 7298 36405 Câncer de pulmão
+1175 4539 36436 Fibrose pulmonar
+1176 4547 36467 Turbeculose
+1177 7312 36498 Câncer de pulmão
+1178 4550 36529 Turbeculose
+1179 4551 36560 Turbeculose
+1180 4603 36591 Turbeculose
+1181 7339 36622 Câncer de pulmão
+1182 4614 36653 Turbeculose
+1183 4630 36684 Turbeculose
+1184 4642 36715 Fibrose pulmonar
+1185 4643 36746 Turbeculose
+1186 4658 36777 Turbeculose
+1187 7369 36808 Câncer de pulmão
+1188 7372 36839 Câncer de pulmão
+1189 7376 36870 Câncer de pulmão
+1190 4680 36901 Turbeculose
+1191 4705 36932 Turbeculose
+1192 4715 36963 Fibrose pulmonar
+1193 7408 36994 Câncer de pulmão
+1194 7411 37025 Bronquite
+1195 7417 37056 Câncer de pulmão
+1196 7418 37087 Câncer de pulmão
+1197 7428 37118 Câncer de pulmão
+1198 4726 37149 Derrame pleural
+1199 4730 37180 Fibrose pulmonar
+1200 7450 37211 Câncer de pulmão
+1201 4749 37242 Fibrose pulmonar
+1202 4752 37273 Fibrose pulmonar
+1203 4771 37304 Turbeculose
+1204 4772 37335 Saúde Normal
+1205 7485 37366 Câncer de pulmão
+1206 7491 37397 Câncer de pulmão
+1207 4773 37428 Turbeculose
+1208 7499 37459 Câncer de pulmão
+1209 7501 37490 Saúde Normal
+1210 4774 37521 Turbeculose
+1211 7511 37552 Câncer de pulmão
+1212 7513 37583 Saúde Normal
+1213 7519 37614 Câncer de pulmão
+1214 4778 37645 Fibrose pulmonar
+1215 7531 37676 Câncer de pulmão
+1216 4779 37707 Turbeculose
+1217 4781 37738 Turbeculose
+1218 7549 37769 Câncer de pulmão
+1219 4788 37800 Fibrose pulmonar
+1220 4803 37831 Fibrose pulmonar
+1221 4837 37862 Fibrose pulmonar
+1222 4844 37893 Câncer de pulmão
+1223 7573 37924 Câncer de pulmão
+1224 7576 37955 Câncer de pulmão
+1225 7588 37986 Câncer de pulmão
+1226 4848 38017 Turbeculose
+1227 4853 38048 Fibrose pulmonar
+1228 4880 38079 Turbeculose
+1229 7608 38110 Câncer de pulmão
+1230 7610 38141 Câncer de pulmão
+1231 7621 38172 Câncer de pulmão
+1232 7626 38203 Câncer de pulmão
+1233 7635 38234 Câncer de pulmão
+1234 7645 38265 Saúde Normal
+1235 7646 38296 Câncer de pulmão
+1236 7649 38327 Câncer de pulmão
+1237 7653 38358 Câncer de pulmão
+1238 7662 38389 Câncer de pulmão
+1239 7666 38420 Saúde Normal
+1240 7675 38451 Câncer de pulmão
+1241 7686 38482 Câncer de pulmão
+1242 7691 38513 Saúde Normal
+1243 7704 38544 Câncer de pulmão
+1244 7707 38575 Câncer de pulmão
+1245 7713 38606 Câncer de pulmão
+1246 7715 38637 Saúde Normal
+1247 7720 38668 Câncer de pulmão
+1248 7722 38699 Câncer de pulmão
+1249 7734 38730 Câncer de pulmão
+1250 7753 38761 Saúde Normal
+1251 7758 38792 Câncer de pulmão
+1252 7769 38823 Câncer de pulmão
+1253 7773 38854 Câncer de pulmão
+1254 7785 38885 Câncer de pulmão
+1255 7790 38916 Câncer de pulmão
+1256 7800 38947 Câncer de pulmão
+1257 7803 38978 Câncer de pulmão
+1258 4881 39009 Saúde Normal
+1259 7823 39040 Câncer de pulmão
+1260 4897 39071 Turbeculose
+1261 4898 39102 Fibrose pulmonar
+1262 7839 39133 Câncer de pulmão
+1263 7844 39164 Câncer de pulmão
+1264 7848 39195 Câncer de pulmão
+1265 7851 39226 Câncer de pulmão
+1266 7864 39257 Câncer de pulmão
+1267 7870 39288 Bronquite
+1268 4901 39319 Turbeculose
+1269 7878 39350 Fibrose pulmonar
+1270 4904 39381 Saúde Normal
+1271 4920 39412 Fibrose pulmonar
+1272 7898 39443 Câncer de pulmão
+1273 7899 39474 Câncer de pulmão
+1274 7900 39505 Câncer de pulmão
+1275 7912 39536 Câncer de pulmão
+1276 7923 39567 Câncer de pulmão
+1277 4930 39598 Câncer de pulmão
+1278 7940 39629 Câncer de pulmão
+1279 7943 39660 Câncer de pulmão
+1280 7948 39691 Câncer de pulmão
+1281 7953 39722 Câncer de pulmão
+1282 7955 39753 Câncer de pulmão
+1283 7956 39784 Câncer de pulmão
+1284 7958 39815 Câncer de pulmão
+1285 7963 39846 Câncer de pulmão
+1286 7965 39877 Câncer de pulmão
+1287 7992 39908 Câncer de pulmão
+1288 8015 39939 Câncer de pulmão
+1289 4931 39970 Fibrose pulmonar
+1290 4936 40001 Turbeculose
+1291 4941 40032 Turbeculose
+1292 4954 40063 Fibrose pulmonar
+1293 8056 40094 Câncer de pulmão
+1294 4956 40125 Fibrose pulmonar
+1295 8067 40156 Câncer de pulmão
+1296 4957 40187 Turbeculose
+1297 8084 40218 Câncer de pulmão
+1298 4968 40249 Turbeculose
+1299 8099 40280 Câncer de pulmão
+1300 8100 40311 Saúde Normal
+1301 8109 40342 Câncer de pulmão
+1302 8114 40373 Câncer de pulmão
+1303 8122 40404 Câncer de pulmão
+1304 8129 40435 Câncer de pulmão
+1305 4978 40466 Turbeculose
+1306 5001 40497 Bronquite
+1307 5006 40528 Turbeculose
+1308 5011 40559 Saúde Normal
+1309 8162 40590 Câncer de pulmão
+1310 8163 40621 Câncer de pulmão
+1311 8168 40652 Câncer de pulmão
+1312 8175 40683 Pneumonia
+1313 8184 40714 Câncer de pulmão
+1314 8185 40745 Câncer de pulmão
+1315 8192 40776 Câncer de pulmão
+1316 8197 40807 Câncer de pulmão
+1317 8203 40838 Câncer de pulmão
+1318 8222 40869 Câncer de pulmão
+1319 8223 40900 Câncer de pulmão
+1320 8234 40931 Câncer de pulmão
+1321 8238 40962 Câncer de pulmão
+1322 8249 40993 Câncer de pulmão
+1323 8257 41024 Câncer de pulmão
+1324 5026 41055 Fibrose pulmonar
+1325 5039 41086 Fibrose pulmonar
+1326 5058 41117 Fibrose pulmonar
+1327 5059 41148 Turbeculose
+1328 8278 41179 Câncer de pulmão
+1329 8287 41210 Fibrose pulmonar
+1330 8293 41241 Câncer de pulmão
+1331 5065 41272 Turbeculose
+1332 8304 41303 Câncer de pulmão
+1333 5070 41334 Bronquite
+1334 5071 41365 Turbeculose
+1335 5082 41396 Turbeculose
+1336 5083 41427 Saúde Normal
+1337 8329 41458 Câncer de pulmão
+1338 5085 41489 Fibrose pulmonar
+1339 5086 41520 Fibrose pulmonar
+1340 5088 41551 Fibrose pulmonar
+1341 5092 41582 Fibrose pulmonar
+1342 8349 41613 Saúde Normal
+1343 8355 41644 Câncer de pulmão
+1344 5099 41675 Fibrose pulmonar
+1345 5114 41706 Fibrose pulmonar
+1346 8377 41737 Câncer de pulmão
+1347 8388 41768 Câncer de pulmão
+1348 8396 41799 Bronquite
+1349 5123 41830 Derrame pleural
+1350 8415 41861 Bronquite
+1351 8417 41892 Câncer de pulmão
+1352 8418 41923 Câncer de pulmão
+1353 8432 41954 Bronquite
+1354 8442 41985 Bronquite
+1355 5137 42016 Turbeculose
+1356 8461 42047 Câncer de pulmão
+1357 8468 42078 Turbeculose
+1358 8470 42109 Câncer de pulmão
+1359 8471 42140 Pneumonia
+1360 8481 42171 Câncer de pulmão
+1361 8495 42202 Câncer de pulmão
+1362 5157 42233 Fibrose pulmonar
+1363 8505 42264 COVID
+1364 8513 42295 Câncer de pulmão
+1365 8530 42326 Câncer de pulmão
+1366 5172 42357 Turbeculose
+1367 8540 42388 Câncer de pulmão
+1368 8542 42419 Saúde Normal
+1369 8549 42450 Câncer de pulmão
+1370 8558 42481 Câncer de pulmão
+1371 8562 42512 Câncer de pulmão
+1372 8573 42543 COVID
+1373 8578 42574 Câncer de pulmão
+1374 5181 42605 Turbeculose
+1375 5186 42636 Turbeculose
+1376 5189 42667 Fibrose pulmonar
+1377 8593 42698 Câncer de pulmão
+1378 5197 42729 Turbeculose
+1379 8597 42760 Câncer de pulmão
+1380 5212 42791 Turbeculose
+1381 8612 42822 Câncer de pulmão
+1382 8619 42853 Fibrose pulmonar
+1383 8626 42884 Câncer de pulmão
+1384 5227 42915 Fibrose pulmonar
+1385 8636 42946 Câncer de pulmão
+1386 5238 42977 Saúde Normal
+1387 5241 43008 Turbeculose
+1388 5243 43039 Saúde Normal
+1389 5249 43070 Fibrose pulmonar
+1390 5256 43101 Turbeculose
+1391 5270 43132 Fibrose pulmonar
+1392 8677 43163 COVID
+1393 8684 43194 Câncer de pulmão
