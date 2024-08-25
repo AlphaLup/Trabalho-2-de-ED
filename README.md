@@ -13,6 +13,7 @@ This project is a Hospital Management System designed to simulate the management
 ## Project Structure
 - `src/`: Contains the source code files.
 - `include/`: Contains the header files.
+- `main_imagine_dragons.c`: Main function for the project.
 - `Makefile`: Build configuration for the project.
 - `db_exam.txt`, `db_patient.txt`, `db_report.txt`: Data files for storing exams, patients, and reports.
 
@@ -70,4 +71,6 @@ The main simulation is run through the `main_imagine_dragons.c` file. It initial
 - `PatientQueue.c`: Implements the functions for managing a queue of patients.
 - `XRMachineManager.c`: Implements the functions for managing X-ray machines.
 - `ExamPriorityQueue.c`: Implements the functions for managing a priority queue of exams.
+- `Report.c`: Implements the functions for managing reports.
+### Main File
 - `main_imagine_dragons.c`: Main file that runs the simulation.
