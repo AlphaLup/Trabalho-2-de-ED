@@ -28,7 +28,7 @@ This project is a Hospital Management System designed to simulate the management
 
 ```bash
 git clone 'https://github.com/AlphaLup/Trabalho-2-de-ED.git'
-cd <repository-directory>
+cd Trabalho-2-de-ED
 ```
 2. Compile the project:
 
