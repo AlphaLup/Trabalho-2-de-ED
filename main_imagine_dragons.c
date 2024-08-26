@@ -215,5 +215,6 @@ void hospital_record(int num_patients, int num_exam, int num_reports, int epq_ti
 
     // Aguarda 10 segundos para a continuação da simulação
     sleep(10);
+    // Sleep(10000); -> windows
 }
 
