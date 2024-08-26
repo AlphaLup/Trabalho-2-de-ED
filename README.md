@@ -45,16 +45,16 @@ make run
 ./output
 ```
 
-4. Clean the build files:
-
-```bash
-make clean
-```
-
-5. All of the above:
+4. All of the above:
 
 ```bash
 make all
+```
+
+5. Clean the build files:
+
+```bash
+make clean
 ```
 ### Running the Simulation
 The main simulation is run through the `main_imagine_dragons.c` file. It initializes the system, creates patients, manages the X-ray machines, schedule exams, create reports and periodicaly prints the current record for the hospital.
