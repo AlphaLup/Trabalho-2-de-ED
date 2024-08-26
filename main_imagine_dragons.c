@@ -2,10 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include <locale.h>
-
-// #include <unistd.h>
-#include <windows.h>
-
+#include <unistd.h>
+//#include <windows.h> -> for windows
 #include "./include/Exam.h"
 #include "./include/Patient.h"
 #include "./include/PatientQueue.h"
@@ -216,6 +214,6 @@ void hospital_record(int num_patients, int num_exam, int num_reports, int epq_ti
     printf("Número de pacientes que esperaram mais de 7200 unidades de tempo: %d\n\n", count_limit);
 
     // Aguarda 10 segundos para a continuação da simulação
-    Sleep(10000);
+    sleep(10);
 }
 
