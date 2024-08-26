@@ -76,3 +76,6 @@ The main simulation is run through the `main_imagine_dragons.c` file. It initial
 - `Report.c`: Implements the functions for managing reports.
 ### Main File
 - `main_imagine_dragons.c`: Main file that runs the simulation.
+
+## More
+- The choice of the name of the file `main_imagine_dragons` and also the name of the hospital "Imagine Dragons" was merely because we created a copy of the file `main.c` to test out the code. But, later on, we forgot to transfer the changes we made on new file to the original, so we kept it on the `main_imagine_dragons`. And we decided to keep it that way, for no particular reason. 
